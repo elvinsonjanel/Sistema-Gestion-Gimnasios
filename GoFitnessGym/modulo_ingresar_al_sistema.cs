@@ -10,11 +10,10 @@ namespace GoFitnessGym
             InitializeComponent();
         }
 
-        // Cuando el formulario termina de cargar
         private void Form1_Load(object sender, EventArgs e)
         {
-            // 1. Pone el cursor parpadeando en el usuario apenas abres la app
-            input_usuario.Focus();
+            // Pone el cursor parpadeando en el usuario apenas abres la app
+            txt_usuario.Focus();
         }
     }
 }
