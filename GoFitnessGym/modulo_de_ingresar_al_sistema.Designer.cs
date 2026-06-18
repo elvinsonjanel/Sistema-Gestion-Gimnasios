@@ -1,6 +1,6 @@
 ﻿namespace GoFitnessGym
 {
-    partial class modulo_ingresar_al_sistema
+    partial class modulo_de_ingresar_al_sistema
     {
         private System.ComponentModel.IContainer components = null;
 

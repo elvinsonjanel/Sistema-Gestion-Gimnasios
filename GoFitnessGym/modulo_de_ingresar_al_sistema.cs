@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace GoFitnessGym
 {
-    public partial class modulo_ingresar_al_sistema : Form
+    public partial class modulo_de_ingresar_al_sistema : Form
     {
-        public modulo_ingresar_al_sistema()
+        public modulo_de_ingresar_al_sistema()
         {
             InitializeComponent();
         }
