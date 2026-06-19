@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="modulo_de_clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_clientes.Designer.cs">
+      <DependentUpon>modulo_de_clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_ingresar_al_sistema.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="modulo_de_clientes.resx">
+      <DependentUpon>modulo_de_clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_ingresar_al_sistema.resx">
       <DependentUpon>modulo_de_ingresar_al_sistema.cs</DependentUpon>
     </EmbeddedResource>
