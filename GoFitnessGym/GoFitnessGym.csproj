@@ -68,6 +68,12 @@
     <Compile Include="modulo_de_ingresar_al_sistema.Designer.cs">
       <DependentUpon>modulo_de_ingresar_al_sistema.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_menu_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_menu_principal.Designer.cs">
+      <DependentUpon>modulo_de_menu_principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_registrar_clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_ingresar_al_sistema.resx">
       <DependentUpon>modulo_de_ingresar_al_sistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_menu_principal.resx">
+      <DependentUpon>modulo_de_menu_principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_registrar_clientes.resx">
       <DependentUpon>modulo_de_registrar_clientes.cs</DependentUpon>

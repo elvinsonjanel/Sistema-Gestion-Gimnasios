@@ -329,7 +329,7 @@
             this.btn_ver_detalle.Name = "btn_ver_detalle";
             this.btn_ver_detalle.Size = new System.Drawing.Size(140, 40);
             this.btn_ver_detalle.TabIndex = 2;
-            this.btn_ver_detalle.Text = "👁 Ver Detalle";
+            this.btn_ver_detalle.Text = "Ver Detalle";
             this.btn_ver_detalle.UseVisualStyleBackColor = false;
             // 
             // btn_eliminar
