@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GoFitnessGym
 {
-    public partial class Gesionar_Membresias : Form
+    public partial class Gestionar_Membresias : Form
     {
-        public Gesionar_Membresias()
+        public Gestionar_Membresias()
         {
             InitializeComponent();
         }
