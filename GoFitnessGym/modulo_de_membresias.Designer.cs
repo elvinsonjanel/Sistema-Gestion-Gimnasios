@@ -1,7 +1,7 @@
 ﻿
 namespace GoFitnessGym
 {
-    partial class Gesionar_Membresias
+    partial class modulo_de_membresias
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace GoFitnessGym
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_crear_membresia = new System.Windows.Forms.Button();
             this.btn_eliminar_membresia = new System.Windows.Forms.Button();
             this.btn_editar_membresia = new System.Windows.Forms.Button();
@@ -40,13 +40,13 @@ namespace GoFitnessGym
             this.cbo_filtro_membresias = new System.Windows.Forms.ComboBox();
             this.lbl_filtro_membresias = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_cerrar_membresias = new System.Windows.Forms.Button();
-            this.btn_detalles_membresias = new System.Windows.Forms.Button();
             this.Tipos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precios = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.temporal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_cerrar_membresias = new System.Windows.Forms.Button();
+            this.btn_detalles_membresias = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -160,28 +160,10 @@ namespace GoFitnessGym
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // btn_cerrar_membresias
-            // 
-            this.btn_cerrar_membresias.Location = new System.Drawing.Point(642, 367);
-            this.btn_cerrar_membresias.Name = "btn_cerrar_membresias";
-            this.btn_cerrar_membresias.Size = new System.Drawing.Size(75, 23);
-            this.btn_cerrar_membresias.TabIndex = 10;
-            this.btn_cerrar_membresias.Text = "Cerrar";
-            this.btn_cerrar_membresias.UseVisualStyleBackColor = true;
-            // 
-            // btn_detalles_membresias
-            // 
-            this.btn_detalles_membresias.Location = new System.Drawing.Point(363, 367);
-            this.btn_detalles_membresias.Name = "btn_detalles_membresias";
-            this.btn_detalles_membresias.Size = new System.Drawing.Size(75, 23);
-            this.btn_detalles_membresias.TabIndex = 11;
-            this.btn_detalles_membresias.Text = "Destalles";
-            this.btn_detalles_membresias.UseVisualStyleBackColor = true;
-            // 
             // Tipos
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lexend Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tipos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lexend Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tipos.DefaultCellStyle = dataGridViewCellStyle1;
             this.Tipos.HeaderText = "Tipos";
             this.Tipos.MinimumWidth = 10;
             this.Tipos.Name = "Tipos";
@@ -207,6 +189,24 @@ namespace GoFitnessGym
             this.productos.HeaderText = "Column1";
             this.productos.Name = "productos";
             // 
+            // btn_cerrar_membresias
+            // 
+            this.btn_cerrar_membresias.Location = new System.Drawing.Point(642, 367);
+            this.btn_cerrar_membresias.Name = "btn_cerrar_membresias";
+            this.btn_cerrar_membresias.Size = new System.Drawing.Size(75, 23);
+            this.btn_cerrar_membresias.TabIndex = 10;
+            this.btn_cerrar_membresias.Text = "Cerrar";
+            this.btn_cerrar_membresias.UseVisualStyleBackColor = true;
+            // 
+            // btn_detalles_membresias
+            // 
+            this.btn_detalles_membresias.Location = new System.Drawing.Point(363, 367);
+            this.btn_detalles_membresias.Name = "btn_detalles_membresias";
+            this.btn_detalles_membresias.Size = new System.Drawing.Size(75, 23);
+            this.btn_detalles_membresias.TabIndex = 11;
+            this.btn_detalles_membresias.Text = "Destalles";
+            this.btn_detalles_membresias.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -217,7 +217,7 @@ namespace GoFitnessGym
             this.label1.TabIndex = 12;
             this.label1.Text = "Administres las membrecias que tendras los clientes";
             // 
-            // Gesionar_Membresias
+            // modulo_de_membresias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -235,7 +235,7 @@ namespace GoFitnessGym
             this.Controls.Add(this.btn_editar_membresia);
             this.Controls.Add(this.btn_eliminar_membresia);
             this.Controls.Add(this.btn_crear_membresia);
-            this.Name = "Gesionar_Membresias";
+            this.Name = "modulo_de_membresias";
             this.Text = "Gestionar_Membresias";
             this.Load += new System.EventHandler(this.Gesionar_Membresias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

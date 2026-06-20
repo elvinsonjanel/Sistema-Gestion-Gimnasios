@@ -17,6 +17,7 @@ namespace GoFitnessGym
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new modulo_de_ingresar_al_sistema());
+           
         }
     }
 }
