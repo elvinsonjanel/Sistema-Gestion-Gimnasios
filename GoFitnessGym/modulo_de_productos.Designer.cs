@@ -1,5 +1,4 @@
-﻿
-namespace GoFitnessGym
+﻿namespace GoFitnessGym
 {
     partial class modulo_de_productos
     {
@@ -36,7 +35,14 @@ namespace GoFitnessGym
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
             this.pnl_tabla = new System.Windows.Forms.Panel();
-            this.dgv_clientes = new System.Windows.Forms.DataGridView();
+            this.dgv_productos = new System.Windows.Forms.DataGridView();
+            this.col_codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_impuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_total_registros = new System.Windows.Forms.Label();
             this.pnl_busqueda = new System.Windows.Forms.Panel();
             this.lbl_buscar = new System.Windows.Forms.Label();
@@ -47,16 +53,9 @@ namespace GoFitnessGym
             this.btn_limpiar = new System.Windows.Forms.Button();
             this.lbl_subtitulo = new System.Windows.Forms.Label();
             this.lbl_titulo = new System.Windows.Forms.Label();
-            this.col_codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_impuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_precios = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnl_acciones.SuspendLayout();
             this.pnl_tabla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             this.pnl_busqueda.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,13 +78,13 @@ namespace GoFitnessGym
             this.btn_nuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
             this.btn_nuevo.FlatAppearance.BorderSize = 0;
             this.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_nuevo.Font = new System.Drawing.Font("Lexend Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nuevo.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nuevo.ForeColor = System.Drawing.Color.White;
             this.btn_nuevo.Location = new System.Drawing.Point(20, 15);
             this.btn_nuevo.Name = "btn_nuevo";
             this.btn_nuevo.Size = new System.Drawing.Size(130, 40);
             this.btn_nuevo.TabIndex = 0;
-            this.btn_nuevo.Text = "➕ Nuevo";
+            this.btn_nuevo.Text = "Nuevo";
             this.btn_nuevo.UseVisualStyleBackColor = false;
             // 
             // btn_editar
@@ -93,13 +92,13 @@ namespace GoFitnessGym
             this.btn_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
             this.btn_editar.FlatAppearance.BorderSize = 0;
             this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar.Font = new System.Drawing.Font("Lexend Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_editar.ForeColor = System.Drawing.Color.White;
             this.btn_editar.Location = new System.Drawing.Point(160, 15);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(130, 40);
             this.btn_editar.TabIndex = 1;
-            this.btn_editar.Text = "✏️ Editar";
+            this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = false;
             // 
             // btn_ver_detalle
@@ -107,7 +106,7 @@ namespace GoFitnessGym
             this.btn_ver_detalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
             this.btn_ver_detalle.FlatAppearance.BorderSize = 0;
             this.btn_ver_detalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ver_detalle.Font = new System.Drawing.Font("Lexend Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ver_detalle.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ver_detalle.ForeColor = System.Drawing.Color.White;
             this.btn_ver_detalle.Location = new System.Drawing.Point(300, 15);
             this.btn_ver_detalle.Name = "btn_ver_detalle";
@@ -121,7 +120,7 @@ namespace GoFitnessGym
             this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.btn_eliminar.FlatAppearance.BorderSize = 0;
             this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_eliminar.Font = new System.Drawing.Font("Lexend Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_eliminar.ForeColor = System.Drawing.Color.White;
             this.btn_eliminar.Location = new System.Drawing.Point(450, 15);
             this.btn_eliminar.Name = "btn_eliminar";
@@ -135,7 +134,7 @@ namespace GoFitnessGym
             this.btn_cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
             this.btn_cerrar.FlatAppearance.BorderSize = 0;
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cerrar.Font = new System.Drawing.Font("Lexend Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cerrar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.White;
             this.btn_cerrar.Location = new System.Drawing.Point(790, 15);
             this.btn_cerrar.Name = "btn_cerrar";
@@ -147,7 +146,7 @@ namespace GoFitnessGym
             // pnl_tabla
             // 
             this.pnl_tabla.BackColor = System.Drawing.Color.White;
-            this.pnl_tabla.Controls.Add(this.dgv_clientes);
+            this.pnl_tabla.Controls.Add(this.dgv_productos);
             this.pnl_tabla.Controls.Add(this.lbl_total_registros);
             this.pnl_tabla.Location = new System.Drawing.Point(31, 165);
             this.pnl_tabla.Name = "pnl_tabla";
@@ -155,38 +154,94 @@ namespace GoFitnessGym
             this.pnl_tabla.Size = new System.Drawing.Size(940, 370);
             this.pnl_tabla.TabIndex = 8;
             // 
-            // dgv_clientes
+            // dgv_productos
             // 
-            this.dgv_clientes.AllowUserToAddRows = false;
-            this.dgv_clientes.AllowUserToDeleteRows = false;
-            this.dgv_clientes.AllowUserToResizeRows = false;
-            this.dgv_clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_clientes.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_clientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_clientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_clientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_clientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_productos.AllowUserToAddRows = false;
+            this.dgv_productos.AllowUserToDeleteRows = false;
+            this.dgv_productos.AllowUserToResizeRows = false;
+            this.dgv_productos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_productos.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_productos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_productos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_productos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_productos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_codigo,
             this.col_nombre,
             this.col_descripcion,
             this.col_proveedor,
             this.col_stock,
             this.col_impuesto,
-            this.col_precios});
-            this.dgv_clientes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_clientes.EnableHeadersVisualStyles = false;
-            this.dgv_clientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
-            this.dgv_clientes.Location = new System.Drawing.Point(15, 15);
-            this.dgv_clientes.MultiSelect = false;
-            this.dgv_clientes.Name = "dgv_clientes";
-            this.dgv_clientes.ReadOnly = true;
-            this.dgv_clientes.RowHeadersVisible = false;
-            this.dgv_clientes.RowHeadersWidth = 51;
-            this.dgv_clientes.RowTemplate.Height = 35;
-            this.dgv_clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_clientes.Size = new System.Drawing.Size(910, 310);
-            this.dgv_clientes.TabIndex = 0;
+            this.col_precio});
+            this.dgv_productos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_productos.EnableHeadersVisualStyles = false;
+            this.dgv_productos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.dgv_productos.Location = new System.Drawing.Point(15, 15);
+            this.dgv_productos.MultiSelect = false;
+            this.dgv_productos.Name = "dgv_productos";
+            this.dgv_productos.ReadOnly = true;
+            this.dgv_productos.RowHeadersVisible = false;
+            this.dgv_productos.RowHeadersWidth = 51;
+            this.dgv_productos.RowTemplate.Height = 35;
+            this.dgv_productos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_productos.Size = new System.Drawing.Size(910, 310);
+            this.dgv_productos.TabIndex = 0;
+            // 
+            // col_codigo
+            // 
+            this.col_codigo.FillWeight = 60F;
+            this.col_codigo.HeaderText = "Código";
+            this.col_codigo.MinimumWidth = 6;
+            this.col_codigo.Name = "col_codigo";
+            this.col_codigo.ReadOnly = true;
+            // 
+            // col_nombre
+            // 
+            this.col_nombre.FillWeight = 120F;
+            this.col_nombre.HeaderText = "Nombre";
+            this.col_nombre.MinimumWidth = 6;
+            this.col_nombre.Name = "col_nombre";
+            this.col_nombre.ReadOnly = true;
+            // 
+            // col_descripcion
+            // 
+            this.col_descripcion.FillWeight = 120F;
+            this.col_descripcion.HeaderText = "Descripción";
+            this.col_descripcion.MinimumWidth = 6;
+            this.col_descripcion.Name = "col_descripcion";
+            this.col_descripcion.ReadOnly = true;
+            // 
+            // col_proveedor
+            // 
+            this.col_proveedor.FillWeight = 120F;
+            this.col_proveedor.HeaderText = "Proveedor";
+            this.col_proveedor.MinimumWidth = 6;
+            this.col_proveedor.Name = "col_proveedor";
+            this.col_proveedor.ReadOnly = true;
+            // 
+            // col_stock
+            // 
+            this.col_stock.FillWeight = 90F;
+            this.col_stock.HeaderText = "Stock";
+            this.col_stock.MinimumWidth = 6;
+            this.col_stock.Name = "col_stock";
+            this.col_stock.ReadOnly = true;
+            // 
+            // col_impuesto
+            // 
+            this.col_impuesto.FillWeight = 90F;
+            this.col_impuesto.HeaderText = "ITBIS";
+            this.col_impuesto.MinimumWidth = 6;
+            this.col_impuesto.Name = "col_impuesto";
+            this.col_impuesto.ReadOnly = true;
+            // 
+            // col_precio
+            // 
+            this.col_precio.FillWeight = 110F;
+            this.col_precio.HeaderText = "Precio";
+            this.col_precio.MinimumWidth = 6;
+            this.col_precio.Name = "col_precio";
+            this.col_precio.ReadOnly = true;
             // 
             // lbl_total_registros
             // 
@@ -260,7 +315,7 @@ namespace GoFitnessGym
             "Nombre",
             "Descripción",
             "Proveedor",
-            "Impuesto/ITBIS",
+            "ITBIS",
             "Precio"});
             this.cbo_filtro.Location = new System.Drawing.Point(460, 16);
             this.cbo_filtro.Name = "cbo_filtro";
@@ -272,7 +327,7 @@ namespace GoFitnessGym
             this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
             this.btn_buscar.FlatAppearance.BorderSize = 0;
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscar.Font = new System.Drawing.Font("Lexend Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buscar.ForeColor = System.Drawing.Color.White;
             this.btn_buscar.Location = new System.Drawing.Point(660, 14);
             this.btn_buscar.Name = "btn_buscar";
@@ -286,7 +341,7 @@ namespace GoFitnessGym
             this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
             this.btn_limpiar.FlatAppearance.BorderSize = 0;
             this.btn_limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_limpiar.Font = new System.Drawing.Font("Lexend Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_limpiar.ForeColor = System.Drawing.Color.White;
             this.btn_limpiar.Location = new System.Drawing.Point(780, 14);
             this.btn_limpiar.Name = "btn_limpiar";
@@ -317,77 +372,26 @@ namespace GoFitnessGym
             this.lbl_titulo.TabIndex = 5;
             this.lbl_titulo.Text = "Gestionar Productos";
             // 
-            // col_codigo
-            // 
-            this.col_codigo.FillWeight = 60F;
-            this.col_codigo.HeaderText = "Código";
-            this.col_codigo.MinimumWidth = 6;
-            this.col_codigo.Name = "col_codigo";
-            this.col_codigo.ReadOnly = true;
-            // 
-            // col_nombre
-            // 
-            this.col_nombre.FillWeight = 120F;
-            this.col_nombre.HeaderText = "Nombre";
-            this.col_nombre.MinimumWidth = 6;
-            this.col_nombre.Name = "col_nombre";
-            this.col_nombre.ReadOnly = true;
-            // 
-            // col_descripcion
-            // 
-            this.col_descripcion.FillWeight = 120F;
-            this.col_descripcion.HeaderText = "Descripción";
-            this.col_descripcion.MinimumWidth = 6;
-            this.col_descripcion.Name = "col_descripcion";
-            this.col_descripcion.ReadOnly = true;
-            // 
-            // col_proveedor
-            // 
-            this.col_proveedor.FillWeight = 120F;
-            this.col_proveedor.HeaderText = "Proveedor";
-            this.col_proveedor.MinimumWidth = 6;
-            this.col_proveedor.Name = "col_proveedor";
-            this.col_proveedor.ReadOnly = true;
-            // 
-            // col_stock
-            // 
-            this.col_stock.FillWeight = 110F;
-            this.col_stock.HeaderText = "Stock/Cantidad";
-            this.col_stock.MinimumWidth = 6;
-            this.col_stock.Name = "col_stock";
-            this.col_stock.ReadOnly = true;
-            // 
-            // col_impuesto
-            // 
-            this.col_impuesto.FillWeight = 90F;
-            this.col_impuesto.HeaderText = "Impuesto/ITBIS";
-            this.col_impuesto.MinimumWidth = 6;
-            this.col_impuesto.Name = "col_impuesto";
-            this.col_impuesto.ReadOnly = true;
-            // 
-            // col_precios
-            // 
-            this.col_precios.FillWeight = 110F;
-            this.col_precios.HeaderText = "Precio";
-            this.col_precios.MinimumWidth = 6;
-            this.col_precios.Name = "col_precios";
-            this.col_precios.ReadOnly = true;
-            // 
             // modulo_de_productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 642);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.ClientSize = new System.Drawing.Size(1000, 650);
             this.Controls.Add(this.pnl_acciones);
             this.Controls.Add(this.pnl_tabla);
             this.Controls.Add(this.pnl_busqueda);
             this.Controls.Add(this.lbl_subtitulo);
             this.Controls.Add(this.lbl_titulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "modulo_de_productos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestionar Productos - Go Fitness";
             this.pnl_acciones.ResumeLayout(false);
             this.pnl_tabla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).EndInit();
             this.pnl_busqueda.ResumeLayout(false);
             this.pnl_busqueda.PerformLayout();
             this.ResumeLayout(false);
@@ -404,14 +408,14 @@ namespace GoFitnessGym
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Button btn_cerrar;
         private System.Windows.Forms.Panel pnl_tabla;
-        private System.Windows.Forms.DataGridView dgv_clientes;
+        private System.Windows.Forms.DataGridView dgv_productos;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_proveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_stock;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_impuesto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_precios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_precio;
         private System.Windows.Forms.Label lbl_total_registros;
         private System.Windows.Forms.Panel pnl_busqueda;
         private System.Windows.Forms.Label lbl_buscar;
