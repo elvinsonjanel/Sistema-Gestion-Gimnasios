@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="consulta_de_asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consulta_de_asistencia.Designer.cs">
+      <DependentUpon>consulta_de_asistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="consulta_de_clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="consulta_de_asistencia.resx">
+      <DependentUpon>consulta_de_asistencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="consulta_de_clientes.resx">
       <DependentUpon>consulta_de_clientes.cs</DependentUpon>
     </EmbeddedResource>
