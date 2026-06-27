@@ -24,47 +24,46 @@
             this.btn_ingresar = new System.Windows.Forms.Button();
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.lbl_iniciar_sesion = new System.Windows.Forms.Label();
+            this.lbl_version_del_sistema = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_usuario
             // 
             this.lbl_usuario.AutoSize = true;
             this.lbl_usuario.Font = new System.Drawing.Font("Lexend", 10F);
-            this.lbl_usuario.Location = new System.Drawing.Point(159, 171);
-            this.lbl_usuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_usuario.Location = new System.Drawing.Point(212, 210);
             this.lbl_usuario.Name = "lbl_usuario";
-            this.lbl_usuario.Size = new System.Drawing.Size(66, 22);
+            this.lbl_usuario.Size = new System.Drawing.Size(80, 27);
             this.lbl_usuario.TabIndex = 0;
             this.lbl_usuario.Text = "Usuario:";
             // 
             // txt_usuario
             // 
             this.txt_usuario.Font = new System.Drawing.Font("Lexend", 10F);
-            this.txt_usuario.Location = new System.Drawing.Point(240, 168);
-            this.txt_usuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_usuario.Location = new System.Drawing.Point(320, 207);
+            this.txt_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(211, 24);
+            this.txt_usuario.Size = new System.Drawing.Size(280, 28);
             this.txt_usuario.TabIndex = 1;
             // 
             // lbl_contrasena
             // 
             this.lbl_contrasena.AutoSize = true;
             this.lbl_contrasena.Font = new System.Drawing.Font("Lexend", 10F);
-            this.lbl_contrasena.Location = new System.Drawing.Point(147, 217);
-            this.lbl_contrasena.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_contrasena.Location = new System.Drawing.Point(196, 267);
             this.lbl_contrasena.Name = "lbl_contrasena";
-            this.lbl_contrasena.Size = new System.Drawing.Size(92, 22);
+            this.lbl_contrasena.Size = new System.Drawing.Size(112, 27);
             this.lbl_contrasena.TabIndex = 2;
             this.lbl_contrasena.Text = "Contraseña:";
             // 
             // txt_contrasena
             // 
             this.txt_contrasena.Font = new System.Drawing.Font("Lexend", 10F);
-            this.txt_contrasena.Location = new System.Drawing.Point(240, 216);
-            this.txt_contrasena.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_contrasena.Location = new System.Drawing.Point(320, 266);
+            this.txt_contrasena.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_contrasena.Name = "txt_contrasena";
             this.txt_contrasena.PasswordChar = '•';
-            this.txt_contrasena.Size = new System.Drawing.Size(211, 24);
+            this.txt_contrasena.Size = new System.Drawing.Size(280, 28);
             this.txt_contrasena.TabIndex = 3;
             // 
             // btn_ingresar
@@ -74,10 +73,10 @@
             this.btn_ingresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ingresar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_ingresar.ForeColor = System.Drawing.Color.White;
-            this.btn_ingresar.Location = new System.Drawing.Point(210, 288);
-            this.btn_ingresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ingresar.Location = new System.Drawing.Point(280, 354);
+            this.btn_ingresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ingresar.Name = "btn_ingresar";
-            this.btn_ingresar.Size = new System.Drawing.Size(180, 32);
+            this.btn_ingresar.Size = new System.Drawing.Size(240, 39);
             this.btn_ingresar.TabIndex = 4;
             this.btn_ingresar.Text = "INGRESAR";
             this.btn_ingresar.UseVisualStyleBackColor = false;
@@ -87,10 +86,9 @@
             this.lbl_titulo.AutoSize = true;
             this.lbl_titulo.Font = new System.Drawing.Font("Lexend", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_titulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.lbl_titulo.Location = new System.Drawing.Point(202, 32);
-            this.lbl_titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_titulo.Location = new System.Drawing.Point(269, 39);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(209, 38);
+            this.lbl_titulo.Size = new System.Drawing.Size(259, 48);
             this.lbl_titulo.TabIndex = 6;
             this.lbl_titulo.Text = "Go Fitness GYM";
             // 
@@ -99,19 +97,30 @@
             this.lbl_iniciar_sesion.AutoSize = true;
             this.lbl_iniciar_sesion.Font = new System.Drawing.Font("Lexend", 10F);
             this.lbl_iniciar_sesion.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_iniciar_sesion.Location = new System.Drawing.Point(248, 77);
-            this.lbl_iniciar_sesion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_iniciar_sesion.Location = new System.Drawing.Point(331, 95);
             this.lbl_iniciar_sesion.Name = "lbl_iniciar_sesion";
-            this.lbl_iniciar_sesion.Size = new System.Drawing.Size(104, 22);
+            this.lbl_iniciar_sesion.Size = new System.Drawing.Size(126, 27);
             this.lbl_iniciar_sesion.TabIndex = 7;
             this.lbl_iniciar_sesion.Text = "Iniciar Sesión";
             // 
+            // lbl_version_del_sistema
+            // 
+            this.lbl_version_del_sistema.AutoSize = true;
+            this.lbl_version_del_sistema.Font = new System.Drawing.Font("Lexend Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_version_del_sistema.Location = new System.Drawing.Point(375, 412);
+            this.lbl_version_del_sistema.Name = "lbl_version_del_sistema";
+            this.lbl_version_del_sistema.Size = new System.Drawing.Size(53, 24);
+            this.lbl_version_del_sistema.TabIndex = 8;
+            this.lbl_version_del_sistema.Text = "v 1.0.0";
+            this.lbl_version_del_sistema.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // modulo_de_ingresar_al_sistema
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_version_del_sistema);
             this.Controls.Add(this.lbl_iniciar_sesion);
             this.Controls.Add(this.lbl_titulo);
             this.Controls.Add(this.btn_ingresar);
@@ -120,7 +129,7 @@
             this.Controls.Add(this.txt_usuario);
             this.Controls.Add(this.lbl_usuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "modulo_de_ingresar_al_sistema";
@@ -141,5 +150,6 @@
         private System.Windows.Forms.Button btn_ingresar;
         private System.Windows.Forms.Label lbl_titulo;
         private System.Windows.Forms.Label lbl_iniciar_sesion;
+        private System.Windows.Forms.Label lbl_version_del_sistema;
     }
 }
