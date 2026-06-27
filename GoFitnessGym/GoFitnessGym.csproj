@@ -106,6 +106,9 @@
     <EmbeddedResource Include="modulo_de_menu_principal.resx">
       <DependentUpon>modulo_de_menu_principal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_pagos.resx">
+      <DependentUpon>modulo_de_pagos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_productos.resx">
       <DependentUpon>modulo_de_productos.cs</DependentUpon>
     </EmbeddedResource>
