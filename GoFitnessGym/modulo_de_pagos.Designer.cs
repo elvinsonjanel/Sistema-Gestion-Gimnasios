@@ -35,6 +35,8 @@ namespace GoFitnessGym
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.cbo_filtro = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.col_codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,8 +46,6 @@ namespace GoFitnessGym
             this.col_metodo_pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -119,6 +119,30 @@ namespace GoFitnessGym
             this.panel1.Size = new System.Drawing.Size(950, 85);
             this.panel1.TabIndex = 6;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Gray;
+            this.button2.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(822, 27);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 45);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Limpiar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Navy;
+            this.button1.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(691, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 45);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // cbo_filtro
             // 
             this.cbo_filtro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -157,12 +181,12 @@ namespace GoFitnessGym
             this.col_metodo_pago,
             this.col_monto,
             this.col_estado});
-            this.dataGridView1.Location = new System.Drawing.Point(56, 215);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 215);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(883, 292);
+            this.dataGridView1.Size = new System.Drawing.Size(916, 292);
             this.dataGridView1.TabIndex = 7;
             // 
             // col_codigo
@@ -171,6 +195,7 @@ namespace GoFitnessGym
             this.col_codigo.MinimumWidth = 8;
             this.col_codigo.Name = "col_codigo";
             this.col_codigo.ReadOnly = true;
+            this.col_codigo.Width = 150;
             // 
             // col_cliente
             // 
@@ -178,6 +203,7 @@ namespace GoFitnessGym
             this.col_cliente.MinimumWidth = 8;
             this.col_cliente.Name = "col_cliente";
             this.col_cliente.ReadOnly = true;
+            this.col_cliente.Width = 150;
             // 
             // col_menbresia
             // 
@@ -185,6 +211,7 @@ namespace GoFitnessGym
             this.col_menbresia.MinimumWidth = 8;
             this.col_menbresia.Name = "col_menbresia";
             this.col_menbresia.ReadOnly = true;
+            this.col_menbresia.Width = 150;
             // 
             // Col_fecha
             // 
@@ -192,6 +219,7 @@ namespace GoFitnessGym
             this.Col_fecha.MinimumWidth = 8;
             this.Col_fecha.Name = "Col_fecha";
             this.Col_fecha.ReadOnly = true;
+            this.Col_fecha.Width = 150;
             // 
             // col_metodo_pago
             // 
@@ -207,6 +235,7 @@ namespace GoFitnessGym
             this.col_monto.MinimumWidth = 8;
             this.col_monto.Name = "col_monto";
             this.col_monto.ReadOnly = true;
+            this.col_monto.Width = 150;
             // 
             // col_estado
             // 
@@ -215,30 +244,6 @@ namespace GoFitnessGym
             this.col_estado.Name = "col_estado";
             this.col_estado.ReadOnly = true;
             this.col_estado.Width = 150;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Navy;
-            this.button1.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(691, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 45);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Gray;
-            this.button2.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(822, 27);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 45);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
