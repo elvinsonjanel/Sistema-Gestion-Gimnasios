@@ -68,6 +68,12 @@
     <Compile Include="consulta_de_vencimientos.Designer.cs">
       <DependentUpon>consulta_de_vencimientos.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_inventario.Designer.cs">
+      <DependentUpon>modulo_de_inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_pagos.cs">
       <SubType>Form</SubType>
     </Compile>
