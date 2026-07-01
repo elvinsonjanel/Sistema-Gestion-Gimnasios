@@ -26,5 +26,15 @@ namespace GoFitnessGym
         {
 
         }
+
+        private void modulo_de_registrar_membresias_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

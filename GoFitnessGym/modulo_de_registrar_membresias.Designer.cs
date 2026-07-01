@@ -36,92 +36,195 @@ namespace GoFitnessGym
             this.lbl_subtitulo = new System.Windows.Forms.Label();
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_codigo = new System.Windows.Forms.Label();
+            this.btn_guardar_regisrar_membresias = new System.Windows.Forms.Button();
+            this.btn_cancelar_registrar_membresia = new System.Windows.Forms.Button();
+            this.txt_nombre_registrar_membresia = new System.Windows.Forms.TextBox();
+            this.txt_descripcion_registrar_membresia = new System.Windows.Forms.TextBox();
+            this.txt_duracion_registrar_membresia = new System.Windows.Forms.TextBox();
+            this.txt_precio_registrar_membresia = new System.Windows.Forms.TextBox();
+            this.txt_codigo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_precio
             // 
             this.lbl_precio.AutoSize = true;
-            this.lbl_precio.Location = new System.Drawing.Point(433, 275);
+            this.lbl_precio.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_precio.Location = new System.Drawing.Point(352, 18);
             this.lbl_precio.Name = "lbl_precio";
-            this.lbl_precio.Size = new System.Drawing.Size(37, 13);
+            this.lbl_precio.Size = new System.Drawing.Size(59, 21);
             this.lbl_precio.TabIndex = 0;
-            this.lbl_precio.Text = "Precio";
+            this.lbl_precio.Text = "Precio *";
             // 
             // lbl_duracion
             // 
             this.lbl_duracion.AutoSize = true;
-            this.lbl_duracion.Location = new System.Drawing.Point(420, 32);
+            this.lbl_duracion.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_duracion.Location = new System.Drawing.Point(19, 198);
             this.lbl_duracion.Name = "lbl_duracion";
-            this.lbl_duracion.Size = new System.Drawing.Size(50, 13);
+            this.lbl_duracion.Size = new System.Drawing.Size(77, 21);
             this.lbl_duracion.TabIndex = 1;
-            this.lbl_duracion.Text = "Duracion";
+            this.lbl_duracion.Text = "Duracion *";
             this.lbl_duracion.Click += new System.EventHandler(this.lbl_duracion_Click);
             // 
             // lbl_nombre
             // 
             this.lbl_nombre.AutoSize = true;
-            this.lbl_nombre.Location = new System.Drawing.Point(17, 32);
+            this.lbl_nombre.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre.Location = new System.Drawing.Point(20, 100);
             this.lbl_nombre.Name = "lbl_nombre";
-            this.lbl_nombre.Size = new System.Drawing.Size(44, 13);
+            this.lbl_nombre.Size = new System.Drawing.Size(70, 21);
             this.lbl_nombre.TabIndex = 2;
-            this.lbl_nombre.Text = "Nombre";
+            this.lbl_nombre.Text = "Nombre *";
             // 
             // lbl_descripcion
             // 
             this.lbl_descripcion.AutoSize = true;
-            this.lbl_descripcion.Location = new System.Drawing.Point(17, 275);
+            this.lbl_descripcion.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_descripcion.Location = new System.Drawing.Point(352, 100);
             this.lbl_descripcion.Name = "lbl_descripcion";
-            this.lbl_descripcion.Size = new System.Drawing.Size(63, 13);
+            this.lbl_descripcion.Size = new System.Drawing.Size(94, 21);
             this.lbl_descripcion.TabIndex = 3;
-            this.lbl_descripcion.Text = "Descripcion";
+            this.lbl_descripcion.Text = "Descripcion *";
             this.lbl_descripcion.Click += new System.EventHandler(this.lbl_descripcion_Click);
             // 
             // lbl_subtitulo
             // 
             this.lbl_subtitulo.AutoSize = true;
-            this.lbl_subtitulo.Font = new System.Drawing.Font("Lexend", 10F);
+            this.lbl_subtitulo.Font = new System.Drawing.Font("Lexend", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_subtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
             this.lbl_subtitulo.Location = new System.Drawing.Point(27, 64);
             this.lbl_subtitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_subtitulo.Name = "lbl_subtitulo";
-            this.lbl_subtitulo.Size = new System.Drawing.Size(235, 22);
+            this.lbl_subtitulo.Size = new System.Drawing.Size(311, 30);
             this.lbl_subtitulo.TabIndex = 5;
             this.lbl_subtitulo.Text = "Registre las nuevas membresias ";
             // 
             // lbl_titulo
             // 
             this.lbl_titulo.AutoSize = true;
-            this.lbl_titulo.Font = new System.Drawing.Font("Lexend", 16F, System.Drawing.FontStyle.Bold);
+            this.lbl_titulo.Font = new System.Drawing.Font("Lexend", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_titulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(44)))));
             this.lbl_titulo.Location = new System.Drawing.Point(25, 29);
             this.lbl_titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(352, 35);
+            this.lbl_titulo.Size = new System.Drawing.Size(443, 33);
             this.lbl_titulo.TabIndex = 4;
-            this.lbl_titulo.Text = "Registrar Nuevas Membresias";
+            this.lbl_titulo.Text = "Registrar Nuevos Planes de Membresias";
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txt_codigo);
+            this.panel1.Controls.Add(this.txt_precio_registrar_membresia);
+            this.panel1.Controls.Add(this.txt_duracion_registrar_membresia);
+            this.panel1.Controls.Add(this.txt_descripcion_registrar_membresia);
+            this.panel1.Controls.Add(this.txt_nombre_registrar_membresia);
+            this.panel1.Controls.Add(this.lbl_codigo);
             this.panel1.Controls.Add(this.lbl_precio);
             this.panel1.Controls.Add(this.lbl_nombre);
             this.panel1.Controls.Add(this.lbl_descripcion);
             this.panel1.Controls.Add(this.lbl_duracion);
+            this.panel1.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(31, 107);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(529, 347);
+            this.panel1.Size = new System.Drawing.Size(575, 303);
             this.panel1.TabIndex = 6;
+            // 
+            // lbl_codigo
+            // 
+            this.lbl_codigo.AutoSize = true;
+            this.lbl_codigo.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_codigo.Location = new System.Drawing.Point(19, 18);
+            this.lbl_codigo.Name = "lbl_codigo";
+            this.lbl_codigo.Size = new System.Drawing.Size(64, 21);
+            this.lbl_codigo.TabIndex = 4;
+            this.lbl_codigo.Text = "Codigo *";
+            // 
+            // btn_guardar_regisrar_membresias
+            // 
+            this.btn_guardar_regisrar_membresias.BackColor = System.Drawing.Color.White;
+            this.btn_guardar_regisrar_membresias.Font = new System.Drawing.Font("Lexend Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardar_regisrar_membresias.Location = new System.Drawing.Point(31, 430);
+            this.btn_guardar_regisrar_membresias.Name = "btn_guardar_regisrar_membresias";
+            this.btn_guardar_regisrar_membresias.Size = new System.Drawing.Size(100, 45);
+            this.btn_guardar_regisrar_membresias.TabIndex = 7;
+            this.btn_guardar_regisrar_membresias.Text = "Guardar";
+            this.btn_guardar_regisrar_membresias.UseVisualStyleBackColor = false;
+            // 
+            // btn_cancelar_registrar_membresia
+            // 
+            this.btn_cancelar_registrar_membresia.Font = new System.Drawing.Font("Lexend Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar_registrar_membresia.Location = new System.Drawing.Point(506, 430);
+            this.btn_cancelar_registrar_membresia.Name = "btn_cancelar_registrar_membresia";
+            this.btn_cancelar_registrar_membresia.Size = new System.Drawing.Size(100, 45);
+            this.btn_cancelar_registrar_membresia.TabIndex = 8;
+            this.btn_cancelar_registrar_membresia.Text = "Cancelar";
+            this.btn_cancelar_registrar_membresia.UseVisualStyleBackColor = true;
+            // 
+            // txt_nombre_registrar_membresia
+            // 
+            this.txt_nombre_registrar_membresia.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre_registrar_membresia.Location = new System.Drawing.Point(23, 124);
+            this.txt_nombre_registrar_membresia.Name = "txt_nombre_registrar_membresia";
+            this.txt_nombre_registrar_membresia.Size = new System.Drawing.Size(194, 24);
+            this.txt_nombre_registrar_membresia.TabIndex = 5;
+            // 
+            // txt_descripcion_registrar_membresia
+            // 
+            this.txt_descripcion_registrar_membresia.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_descripcion_registrar_membresia.Location = new System.Drawing.Point(347, 124);
+            this.txt_descripcion_registrar_membresia.Multiline = true;
+            this.txt_descripcion_registrar_membresia.Name = "txt_descripcion_registrar_membresia";
+            this.txt_descripcion_registrar_membresia.Size = new System.Drawing.Size(194, 122);
+            this.txt_descripcion_registrar_membresia.TabIndex = 7;
+            // 
+            // txt_duracion_registrar_membresia
+            // 
+            this.txt_duracion_registrar_membresia.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_duracion_registrar_membresia.Location = new System.Drawing.Point(23, 222);
+            this.txt_duracion_registrar_membresia.Name = "txt_duracion_registrar_membresia";
+            this.txt_duracion_registrar_membresia.Size = new System.Drawing.Size(194, 24);
+            this.txt_duracion_registrar_membresia.TabIndex = 8;
+            // 
+            // txt_precio_registrar_membresia
+            // 
+            this.txt_precio_registrar_membresia.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_precio_registrar_membresia.Location = new System.Drawing.Point(356, 45);
+            this.txt_precio_registrar_membresia.Name = "txt_precio_registrar_membresia";
+            this.txt_precio_registrar_membresia.Size = new System.Drawing.Size(185, 24);
+            this.txt_precio_registrar_membresia.TabIndex = 9;
+            this.txt_precio_registrar_membresia.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // txt_codigo
+            // 
+            this.txt_codigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.txt_codigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_codigo.Font = new System.Drawing.Font("Lexend", 10F);
+            this.txt_codigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(174)))), ((int)(((byte)(192)))));
+            this.txt_codigo.Location = new System.Drawing.Point(24, 45);
+            this.txt_codigo.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.ReadOnly = true;
+            this.txt_codigo.Size = new System.Drawing.Size(256, 24);
+            this.txt_codigo.TabIndex = 10;
+            this.txt_codigo.Text = "Se generará automáticamente";
             // 
             // modulo_de_registrar_membresias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 504);
+            this.Controls.Add(this.btn_cancelar_registrar_membresia);
+            this.Controls.Add(this.btn_guardar_regisrar_membresias);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_subtitulo);
             this.Controls.Add(this.lbl_titulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "modulo_de_registrar_membresias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Registrar membresias - Go fitnes";
+            this.Load += new System.EventHandler(this.modulo_de_registrar_membresias_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -138,5 +241,13 @@ namespace GoFitnessGym
         private System.Windows.Forms.Label lbl_subtitulo;
         private System.Windows.Forms.Label lbl_titulo;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txt_precio_registrar_membresia;
+        private System.Windows.Forms.TextBox txt_duracion_registrar_membresia;
+        private System.Windows.Forms.TextBox txt_descripcion_registrar_membresia;
+        private System.Windows.Forms.TextBox txt_nombre_registrar_membresia;
+        private System.Windows.Forms.Label lbl_codigo;
+        private System.Windows.Forms.Button btn_guardar_regisrar_membresias;
+        private System.Windows.Forms.Button btn_cancelar_registrar_membresia;
+        private System.Windows.Forms.TextBox txt_codigo;
     }
 }
