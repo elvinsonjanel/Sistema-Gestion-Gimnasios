@@ -65,6 +65,12 @@
     <Compile Include="consulta_de_vencimientos.Designer.cs">
       <DependentUpon>consulta_de_vencimientos.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_control_de_acceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_control_de_acceso.Designer.cs">
+      <DependentUpon>modulo_de_control_de_acceso.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_inventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="consulta_de_clientes.resx">
       <DependentUpon>consulta_de_clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_control_de_acceso.resx">
+      <DependentUpon>modulo_de_control_de_acceso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_membresias.resx">
       <DependentUpon>modulo_de_membresias.cs</DependentUpon>
