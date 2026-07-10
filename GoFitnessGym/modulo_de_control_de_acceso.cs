@@ -26,5 +26,20 @@ namespace GoFitnessGym
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_acceso1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
