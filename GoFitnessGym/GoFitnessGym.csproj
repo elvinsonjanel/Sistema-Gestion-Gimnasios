@@ -59,6 +59,12 @@
     <Compile Include="consulta_de_clientes.Designer.cs">
       <DependentUpon>consulta_de_clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="consulta_de_clientes_morosos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consulta_de_clientes_morosos.Designer.cs">
+      <DependentUpon>consulta_de_clientes_morosos.cs</DependentUpon>
+    </Compile>
     <Compile Include="consulta_de_vencimientos.cs">
       <SubType>Form</SubType>
     </Compile>
