@@ -16,5 +16,10 @@ namespace GoFitnessGym
         {
             InitializeComponent();
         }
+
+        private void dgv_facturas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

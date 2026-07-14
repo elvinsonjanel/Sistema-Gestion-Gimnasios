@@ -89,11 +89,11 @@
     <Compile Include="detalle_de_cliente.Designer.cs">
       <DependentUpon>detalle_de_cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="modulo_consulta_ facturacion_y_ventas.cs">
+    <Compile Include="modulo_consulta_ factura_ingresos_y_ventas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="modulo_consulta_ facturacion_y_ventas.Designer.cs">
-      <DependentUpon>modulo_consulta_ facturacion_y_ventas.cs</DependentUpon>
+    <Compile Include="modulo_consulta_ factura_ingresos_y_ventas.Designer.cs">
+      <DependentUpon>modulo_consulta_ factura_ingresos_y_ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="modulo_de_cierre_de_caja.cs">
       <SubType>Form</SubType>
@@ -193,8 +193,8 @@
     <EmbeddedResource Include="detalle_de_cliente.resx">
       <DependentUpon>detalle_de_cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="modulo_consulta_ facturacion_y_ventas.resx">
-      <DependentUpon>modulo_consulta_ facturacion_y_ventas.cs</DependentUpon>
+    <EmbeddedResource Include="modulo_consulta_ factura_ingresos_y_ventas.resx">
+      <DependentUpon>modulo_consulta_ factura_ingresos_y_ventas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_control_de_acceso.resx">
       <DependentUpon>modulo_de_control_de_acceso.cs</DependentUpon>
