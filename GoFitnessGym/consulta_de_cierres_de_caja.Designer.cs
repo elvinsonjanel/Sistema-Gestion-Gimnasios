@@ -49,12 +49,6 @@
             this.lbl_cierres_con_diferencia = new System.Windows.Forms.Label();
             this.pnl_tabla = new System.Windows.Forms.Panel();
             this.dgv_cierres_de_caja = new System.Windows.Forms.DataGridView();
-            this.lbl_total_registros = new System.Windows.Forms.Label();
-            this.pnl_acciones = new System.Windows.Forms.Panel();
-            this.btn_ver_detalle = new System.Windows.Forms.Button();
-            this.btn_imprimir = new System.Windows.Forms.Button();
-            this.btn_exportar = new System.Windows.Forms.Button();
-            this.btn_cerrar = new System.Windows.Forms.Button();
             this.col_numero_cierre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_fecha_cierre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_encargado = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +57,12 @@
             this.col_efectivo_contado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_diferencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbl_total_registros = new System.Windows.Forms.Label();
+            this.pnl_acciones = new System.Windows.Forms.Panel();
+            this.btn_ver_detalle = new System.Windows.Forms.Button();
+            this.btn_imprimir = new System.Windows.Forms.Button();
+            this.btn_exportar = new System.Windows.Forms.Button();
+            this.btn_cerrar = new System.Windows.Forms.Button();
             this.pnl_filtros.SuspendLayout();
             this.pnl_resumen.SuspendLayout();
             this.pnl_total_cierres.SuspendLayout();
@@ -203,7 +203,7 @@
             this.cbo_estado.FormattingEnabled = true;
             this.cbo_estado.Items.AddRange(new object[] {
             "Todos",
-            "Cuadrado",
+            "Sin diferencia",
             "Con diferencia"});
             this.cbo_estado.Location = new System.Drawing.Point(609, 36);
             this.cbo_estado.Name = "cbo_estado";
@@ -415,6 +415,86 @@
             this.dgv_cierres_de_caja.Size = new System.Drawing.Size(1110, 285);
             this.dgv_cierres_de_caja.TabIndex = 0;
             // 
+            // col_numero_cierre
+            // 
+            this.col_numero_cierre.FillWeight = 60F;
+            this.col_numero_cierre.HeaderText = "Número";
+            this.col_numero_cierre.MinimumWidth = 70;
+            this.col_numero_cierre.Name = "col_numero_cierre";
+            this.col_numero_cierre.ReadOnly = true;
+            // 
+            // col_fecha_cierre
+            // 
+            this.col_fecha_cierre.FillWeight = 75F;
+            this.col_fecha_cierre.HeaderText = "Fecha";
+            this.col_fecha_cierre.MinimumWidth = 85;
+            this.col_fecha_cierre.Name = "col_fecha_cierre";
+            this.col_fecha_cierre.ReadOnly = true;
+            // 
+            // col_encargado
+            // 
+            this.col_encargado.FillWeight = 115F;
+            this.col_encargado.HeaderText = "Encargado";
+            this.col_encargado.MinimumWidth = 140;
+            this.col_encargado.Name = "col_encargado";
+            this.col_encargado.ReadOnly = true;
+            // 
+            // col_ingresos_sistema
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "N2";
+            dataGridViewCellStyle2.NullValue = "0.00";
+            this.col_ingresos_sistema.DefaultCellStyle = dataGridViewCellStyle2;
+            this.col_ingresos_sistema.FillWeight = 95F;
+            this.col_ingresos_sistema.HeaderText = "Ingresos del sistema";
+            this.col_ingresos_sistema.MinimumWidth = 115;
+            this.col_ingresos_sistema.Name = "col_ingresos_sistema";
+            this.col_ingresos_sistema.ReadOnly = true;
+            // 
+            // col_efectivo_esperado
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = "0.00";
+            this.col_efectivo_esperado.DefaultCellStyle = dataGridViewCellStyle3;
+            this.col_efectivo_esperado.FillWeight = 90F;
+            this.col_efectivo_esperado.HeaderText = "Efectivo esperado";
+            this.col_efectivo_esperado.MinimumWidth = 110;
+            this.col_efectivo_esperado.Name = "col_efectivo_esperado";
+            this.col_efectivo_esperado.ReadOnly = true;
+            // 
+            // col_efectivo_contado
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = "0.00";
+            this.col_efectivo_contado.DefaultCellStyle = dataGridViewCellStyle4;
+            this.col_efectivo_contado.FillWeight = 90F;
+            this.col_efectivo_contado.HeaderText = "Efectivo contado";
+            this.col_efectivo_contado.MinimumWidth = 110;
+            this.col_efectivo_contado.Name = "col_efectivo_contado";
+            this.col_efectivo_contado.ReadOnly = true;
+            // 
+            // col_diferencia
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = "0.00";
+            this.col_diferencia.DefaultCellStyle = dataGridViewCellStyle5;
+            this.col_diferencia.FillWeight = 80F;
+            this.col_diferencia.HeaderText = "Diferencia";
+            this.col_diferencia.MinimumWidth = 95;
+            this.col_diferencia.Name = "col_diferencia";
+            this.col_diferencia.ReadOnly = true;
+            // 
+            // col_estado
+            // 
+            this.col_estado.FillWeight = 85F;
+            this.col_estado.HeaderText = "Estado";
+            this.col_estado.MinimumWidth = 105;
+            this.col_estado.Name = "col_estado";
+            this.col_estado.ReadOnly = true;
+            // 
             // lbl_total_registros
             // 
             this.lbl_total_registros.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -498,86 +578,6 @@
             this.btn_cerrar.TabIndex = 3;
             this.btn_cerrar.Text = "Cerrar";
             this.btn_cerrar.UseVisualStyleBackColor = false;
-            // 
-            // col_numero_cierre
-            // 
-            this.col_numero_cierre.FillWeight = 60F;
-            this.col_numero_cierre.HeaderText = "Número";
-            this.col_numero_cierre.MinimumWidth = 70;
-            this.col_numero_cierre.Name = "col_numero_cierre";
-            this.col_numero_cierre.ReadOnly = true;
-            // 
-            // col_fecha_cierre
-            // 
-            this.col_fecha_cierre.FillWeight = 75F;
-            this.col_fecha_cierre.HeaderText = "Fecha";
-            this.col_fecha_cierre.MinimumWidth = 85;
-            this.col_fecha_cierre.Name = "col_fecha_cierre";
-            this.col_fecha_cierre.ReadOnly = true;
-            // 
-            // col_encargado
-            // 
-            this.col_encargado.FillWeight = 115F;
-            this.col_encargado.HeaderText = "Encargado";
-            this.col_encargado.MinimumWidth = 140;
-            this.col_encargado.Name = "col_encargado";
-            this.col_encargado.ReadOnly = true;
-            // 
-            // col_ingresos_sistema
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = "0.00";
-            this.col_ingresos_sistema.DefaultCellStyle = dataGridViewCellStyle2;
-            this.col_ingresos_sistema.FillWeight = 95F;
-            this.col_ingresos_sistema.HeaderText = "Ingresos del sistema";
-            this.col_ingresos_sistema.MinimumWidth = 115;
-            this.col_ingresos_sistema.Name = "col_ingresos_sistema";
-            this.col_ingresos_sistema.ReadOnly = true;
-            // 
-            // col_efectivo_esperado
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = "0.00";
-            this.col_efectivo_esperado.DefaultCellStyle = dataGridViewCellStyle3;
-            this.col_efectivo_esperado.FillWeight = 90F;
-            this.col_efectivo_esperado.HeaderText = "Efectivo esperado";
-            this.col_efectivo_esperado.MinimumWidth = 110;
-            this.col_efectivo_esperado.Name = "col_efectivo_esperado";
-            this.col_efectivo_esperado.ReadOnly = true;
-            // 
-            // col_efectivo_contado
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle4.Format = "N2";
-            dataGridViewCellStyle4.NullValue = "0.00";
-            this.col_efectivo_contado.DefaultCellStyle = dataGridViewCellStyle4;
-            this.col_efectivo_contado.FillWeight = 90F;
-            this.col_efectivo_contado.HeaderText = "Efectivo contado";
-            this.col_efectivo_contado.MinimumWidth = 110;
-            this.col_efectivo_contado.Name = "col_efectivo_contado";
-            this.col_efectivo_contado.ReadOnly = true;
-            // 
-            // col_diferencia
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.Format = "N2";
-            dataGridViewCellStyle5.NullValue = "0.00";
-            this.col_diferencia.DefaultCellStyle = dataGridViewCellStyle5;
-            this.col_diferencia.FillWeight = 80F;
-            this.col_diferencia.HeaderText = "Diferencia";
-            this.col_diferencia.MinimumWidth = 95;
-            this.col_diferencia.Name = "col_diferencia";
-            this.col_diferencia.ReadOnly = true;
-            // 
-            // col_estado
-            // 
-            this.col_estado.FillWeight = 85F;
-            this.col_estado.HeaderText = "Estado";
-            this.col_estado.MinimumWidth = 105;
-            this.col_estado.Name = "col_estado";
-            this.col_estado.ReadOnly = true;
             // 
             // consulta_de_cierres_de_caja
             // 
