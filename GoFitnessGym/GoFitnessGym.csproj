@@ -149,6 +149,12 @@
     <Compile Include="modulo_de_registrar_productos.Designer.cs">
       <DependentUpon>modulo_de_registrar_productos.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_registrar_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_registrar_usuarios.Designer.cs">
+      <DependentUpon>modulo_de_registrar_usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_registrar_productos.resx">
       <DependentUpon>modulo_de_registrar_productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_registrar_usuarios.resx">
+      <DependentUpon>modulo_de_registrar_usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
