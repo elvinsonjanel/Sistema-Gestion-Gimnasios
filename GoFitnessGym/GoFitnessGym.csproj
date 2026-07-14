@@ -53,6 +53,12 @@
     <Compile Include="consulta_de_asistencia.Designer.cs">
       <DependentUpon>consulta_de_asistencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="consulta_de_cierres_de_caja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consulta_de_cierres_de_caja.Designer.cs">
+      <DependentUpon>consulta_de_cierres_de_caja.cs</DependentUpon>
+    </Compile>
     <Compile Include="consulta_de_clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="consulta_de_asistencia.resx">
       <DependentUpon>consulta_de_asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consulta_de_cierres_de_caja.resx">
+      <DependentUpon>consulta_de_cierres_de_caja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="consulta_de_clientes.resx">
       <DependentUpon>consulta_de_clientes.cs</DependentUpon>
