@@ -41,5 +41,30 @@ namespace GoFitnessGym
         {
 
         }
+
+        private void panel_acceso2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modulo_de_control_de_acceso_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void panel1_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
