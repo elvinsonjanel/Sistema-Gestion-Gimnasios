@@ -83,6 +83,12 @@
     <Compile Include="detalle_de_cierre_de_caja.Designer.cs">
       <DependentUpon>detalle_de_cierre_de_caja.cs</DependentUpon>
     </Compile>
+    <Compile Include="detalle_de_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detalle_de_cliente.Designer.cs">
+      <DependentUpon>detalle_de_cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_consulta_ facturacion_y_ventas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="consulta_de_clientes.resx">
       <DependentUpon>consulta_de_clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detalle_de_cliente.resx">
+      <DependentUpon>detalle_de_cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_consulta_ facturacion_y_ventas.resx">
       <DependentUpon>modulo_consulta_ facturacion_y_ventas.cs</DependentUpon>
