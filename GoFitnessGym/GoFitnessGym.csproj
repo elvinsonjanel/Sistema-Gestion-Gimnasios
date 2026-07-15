@@ -119,6 +119,12 @@
     <Compile Include="modulo_de_control_de_acceso.Designer.cs">
       <DependentUpon>modulo_de_control_de_acceso.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_editar_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_editar_cliente.Designer.cs">
+      <DependentUpon>modulo_de_editar_cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_editar_rol.cs">
       <SubType>Form</SubType>
     </Compile>
