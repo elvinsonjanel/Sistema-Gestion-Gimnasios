@@ -29,28 +29,27 @@ namespace GoFitnessGym
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lbl_buscar_notificaciones = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbl_filtrar = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_membresias = new System.Windows.Forms.Label();
             this.btn_leido = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lbl_filtrar = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbl_buscar_notificaciones = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btn_limpiar_notificaciones = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -61,9 +60,9 @@ namespace GoFitnessGym
             this.label1.Font = new System.Drawing.Font("Lexend SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 38);
+            this.label1.Size = new System.Drawing.Size(570, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Notificaciones Generales ";
+            this.label1.Text = "Notificaciones de Vencimiento de Membresias";
             // 
             // label2
             // 
@@ -80,8 +79,8 @@ namespace GoFitnessGym
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.lbl_membresias);
+            this.panel1.Controls.Add(this.btn_limpiar_notificaciones);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btn_leido);
             this.panel1.Controls.Add(this.label3);
@@ -96,53 +95,57 @@ namespace GoFitnessGym
             this.panel1.Size = new System.Drawing.Size(776, 366);
             this.panel1.TabIndex = 2;
             // 
-            // dataGridView2
+            // label8
             // 
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.estado});
-            this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.Location = new System.Drawing.Point(17, 52);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(695, 277);
-            this.dataGridView2.TabIndex = 2;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(482, 338);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(91, 17);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Total Alertas: 0";
             // 
-            // lbl_buscar_notificaciones
+            // label6
             // 
-            this.lbl_buscar_notificaciones.AutoSize = true;
-            this.lbl_buscar_notificaciones.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_buscar_notificaciones.Location = new System.Drawing.Point(22, 19);
-            this.lbl_buscar_notificaciones.Name = "lbl_buscar_notificaciones";
-            this.lbl_buscar_notificaciones.Size = new System.Drawing.Size(99, 17);
-            this.lbl_buscar_notificaciones.TabIndex = 4;
-            this.lbl_buscar_notificaciones.Text = "Buscar por socio:";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(482, 338);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.TabIndex = 13;
             // 
-            // textBox1
+            // lbl_membresias
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(127, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 5;
+            this.lbl_membresias.AutoSize = true;
+            this.lbl_membresias.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_membresias.Location = new System.Drawing.Point(608, 338);
+            this.lbl_membresias.Name = "lbl_membresias";
+            this.lbl_membresias.Size = new System.Drawing.Size(104, 17);
+            this.lbl_membresias.TabIndex = 12;
+            this.lbl_membresias.Text = "Alertas sin leer: 0";
             // 
-            // lbl_filtrar
+            // btn_leido
             // 
-            this.lbl_filtrar.AutoSize = true;
-            this.lbl_filtrar.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_filtrar.Location = new System.Drawing.Point(298, 19);
-            this.lbl_filtrar.Name = "lbl_filtrar";
-            this.lbl_filtrar.Size = new System.Drawing.Size(64, 17);
-            this.lbl_filtrar.TabIndex = 6;
-            this.lbl_filtrar.Text = "Firtral por:";
+            this.btn_leido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
+            this.btn_leido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_leido.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_leido.ForeColor = System.Drawing.Color.White;
+            this.btn_leido.Location = new System.Drawing.Point(682, 16);
+            this.btn_leido.Name = "btn_leido";
+            this.btn_leido.Size = new System.Drawing.Size(75, 23);
+            this.btn_leido.TabIndex = 9;
+            this.btn_leido.Text = "Leido";
+            this.btn_leido.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(587, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 19);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Marcar Leido:";
             // 
             // comboBox2
             // 
@@ -158,26 +161,53 @@ namespace GoFitnessGym
             this.comboBox2.Size = new System.Drawing.Size(121, 25);
             this.comboBox2.TabIndex = 7;
             // 
-            // label3
+            // lbl_filtrar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(530, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 17);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Marcar Leido:";
+            this.lbl_filtrar.AutoSize = true;
+            this.lbl_filtrar.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_filtrar.Location = new System.Drawing.Point(298, 19);
+            this.lbl_filtrar.Name = "lbl_filtrar";
+            this.lbl_filtrar.Size = new System.Drawing.Size(71, 19);
+            this.lbl_filtrar.TabIndex = 6;
+            this.lbl_filtrar.Text = "Firtral por:";
             // 
-            // btn_leido
+            // textBox1
             // 
-            this.btn_leido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_leido.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_leido.Location = new System.Drawing.Point(637, 16);
-            this.btn_leido.Name = "btn_leido";
-            this.btn_leido.Size = new System.Drawing.Size(75, 23);
-            this.btn_leido.TabIndex = 9;
-            this.btn_leido.Text = "Leido";
-            this.btn_leido.UseVisualStyleBackColor = true;
+            this.textBox1.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(135, 18);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 5;
+            // 
+            // lbl_buscar_notificaciones
+            // 
+            this.lbl_buscar_notificaciones.AutoSize = true;
+            this.lbl_buscar_notificaciones.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_buscar_notificaciones.Location = new System.Drawing.Point(22, 19);
+            this.lbl_buscar_notificaciones.Name = "lbl_buscar_notificaciones";
+            this.lbl_buscar_notificaciones.Size = new System.Drawing.Size(107, 19);
+            this.lbl_buscar_notificaciones.TabIndex = 4;
+            this.lbl_buscar_notificaciones.Text = "Buscar por socio:";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.estado});
+            this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
+            this.dataGridView2.Location = new System.Drawing.Point(17, 52);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(740, 277);
+            this.dataGridView2.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -199,81 +229,44 @@ namespace GoFitnessGym
             this.estado.HeaderText = "Estado";
             this.estado.Name = "estado";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 342);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 17);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "label4";
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(75, 337);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(378, 342);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 17);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "label5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(488, 342);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 17);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "label6";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(627, 342);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 17);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "label8";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lexend Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(16, 47);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(161, 17);
+            this.label7.Size = new System.Drawing.Size(231, 17);
             this.label7.TabIndex = 3;
-            this.label7.Text = "Ver notificaciones del sistema";
+            this.label7.Text = "Ver notificaciones que se le enviar al Cliente";
             // 
-            // comboBox1
+            // label4
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 18);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(14, 338);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 17);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Limpiar Historial:";
+            // 
+            // btn_limpiar_notificaciones
+            // 
+            this.btn_limpiar_notificaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
+            this.btn_limpiar_notificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_limpiar_notificaciones.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar_notificaciones.ForeColor = System.Drawing.Color.White;
+            this.btn_limpiar_notificaciones.Location = new System.Drawing.Point(119, 332);
+            this.btn_limpiar_notificaciones.Name = "btn_limpiar_notificaciones";
+            this.btn_limpiar_notificaciones.Size = new System.Drawing.Size(75, 28);
+            this.btn_limpiar_notificaciones.TabIndex = 11;
+            this.btn_limpiar_notificaciones.Text = "Limpiar";
+            this.btn_limpiar_notificaciones.UseVisualStyleBackColor = false;
             // 
             // modulo_de_notificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -295,9 +288,7 @@ namespace GoFitnessGym
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_membresias;
         private System.Windows.Forms.Button btn_leido;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -309,6 +300,7 @@ namespace GoFitnessGym
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btn_limpiar_notificaciones;
+        private System.Windows.Forms.Label label4;
     }
 }

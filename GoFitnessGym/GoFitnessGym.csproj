@@ -149,6 +149,12 @@
     <Compile Include="modulo_de_inventario.Designer.cs">
       <DependentUpon>modulo_de_inventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_notificaciones automaticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_notificaciones automaticas.Designer.cs">
+      <DependentUpon>modulo_de_notificaciones automaticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_notificaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -270,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_menu_principal.resx">
       <DependentUpon>modulo_de_menu_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_notificaciones automaticas.resx">
+      <DependentUpon>modulo_de_notificaciones automaticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_notificaciones.resx">
       <DependentUpon>modulo_de_notificaciones.cs</DependentUpon>
