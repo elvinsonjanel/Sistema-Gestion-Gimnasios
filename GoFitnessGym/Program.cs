@@ -16,7 +16,7 @@ namespace GoFitnessGym
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new modulo_de_control_de_acceso());
+            Application.Run(new modulo_consulta_facturas_ventas_y_ingresos ());
            
         }
     }

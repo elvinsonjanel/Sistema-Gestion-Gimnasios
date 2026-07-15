@@ -20,6 +20,10 @@
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.lbl_subtitulo = new System.Windows.Forms.Label();
             this.panel_card = new System.Windows.Forms.Panel();
+            this.lbl_fecha_actual = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_fecha_ultimo_cuadre = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.grp_resumen_sistema = new System.Windows.Forms.GroupBox();
             this.lbl_ingresos_totales = new System.Windows.Forms.Label();
             this.txt_ingresos_totales = new System.Windows.Forms.TextBox();
@@ -38,10 +42,6 @@
             this.btn_confirmar_cierre = new System.Windows.Forms.Button();
             this.btn_imprimir = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl_fecha_ultimo_cuadre = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbl_fecha_actual = new System.Windows.Forms.Label();
             this.panel_card.SuspendLayout();
             this.grp_resumen_sistema.SuspendLayout();
             this.grp_conteo_fisico.SuspendLayout();
@@ -53,9 +53,10 @@
             this.lbl_titulo.AutoSize = true;
             this.lbl_titulo.Font = new System.Drawing.Font("Lexend", 16F, System.Drawing.FontStyle.Bold);
             this.lbl_titulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(44)))));
-            this.lbl_titulo.Location = new System.Drawing.Point(30, 20);
+            this.lbl_titulo.Location = new System.Drawing.Point(22, 16);
+            this.lbl_titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(352, 43);
+            this.lbl_titulo.Size = new System.Drawing.Size(285, 35);
             this.lbl_titulo.TabIndex = 0;
             this.lbl_titulo.Text = "Cierre de Caja y Cuadre";
             // 
@@ -64,9 +65,10 @@
             this.lbl_subtitulo.AutoSize = true;
             this.lbl_subtitulo.Font = new System.Drawing.Font("Lexend", 10F);
             this.lbl_subtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
-            this.lbl_subtitulo.Location = new System.Drawing.Point(32, 60);
+            this.lbl_subtitulo.Location = new System.Drawing.Point(24, 49);
+            this.lbl_subtitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_subtitulo.Name = "lbl_subtitulo";
-            this.lbl_subtitulo.Size = new System.Drawing.Size(534, 27);
+            this.lbl_subtitulo.Size = new System.Drawing.Size(441, 22);
             this.lbl_subtitulo.TabIndex = 1;
             this.lbl_subtitulo.Text = "Compare el efectivo físico en caja con los registros del sistema";
             // 
@@ -79,11 +81,56 @@
             this.panel_card.Controls.Add(this.label1);
             this.panel_card.Controls.Add(this.grp_resumen_sistema);
             this.panel_card.Controls.Add(this.grp_conteo_fisico);
-            this.panel_card.Location = new System.Drawing.Point(30, 100);
+            this.panel_card.Location = new System.Drawing.Point(22, 81);
+            this.panel_card.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel_card.Name = "panel_card";
-            this.panel_card.Padding = new System.Windows.Forms.Padding(20);
-            this.panel_card.Size = new System.Drawing.Size(940, 404);
+            this.panel_card.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.panel_card.Size = new System.Drawing.Size(705, 328);
             this.panel_card.TabIndex = 2;
+            // 
+            // lbl_fecha_actual
+            // 
+            this.lbl_fecha_actual.AutoSize = true;
+            this.lbl_fecha_actual.Font = new System.Drawing.Font("Lexend Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fecha_actual.Location = new System.Drawing.Point(477, 16);
+            this.lbl_fecha_actual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_fecha_actual.Name = "lbl_fecha_actual";
+            this.lbl_fecha_actual.Size = new System.Drawing.Size(175, 22);
+            this.lbl_fecha_actual.TabIndex = 9;
+            this.lbl_fecha_actual.Text = "07/07/2026 00:00:00 PM";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lexend Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(380, 16);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 22);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Fecha Actual:";
+            // 
+            // lbl_fecha_ultimo_cuadre
+            // 
+            this.lbl_fecha_ultimo_cuadre.AutoSize = true;
+            this.lbl_fecha_ultimo_cuadre.Font = new System.Drawing.Font("Lexend Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fecha_ultimo_cuadre.Location = new System.Drawing.Point(154, 16);
+            this.lbl_fecha_ultimo_cuadre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_fecha_ultimo_cuadre.Name = "lbl_fecha_ultimo_cuadre";
+            this.lbl_fecha_ultimo_cuadre.Size = new System.Drawing.Size(175, 22);
+            this.lbl_fecha_ultimo_cuadre.TabIndex = 7;
+            this.lbl_fecha_ultimo_cuadre.Text = "07/07/2026 00:00:00 PM";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lexend Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(50, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 22);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Último cuadre:";
             // 
             // grp_resumen_sistema
             // 
@@ -95,9 +142,11 @@
             this.grp_resumen_sistema.Controls.Add(this.txt_efectivo_sistema);
             this.grp_resumen_sistema.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold);
             this.grp_resumen_sistema.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.grp_resumen_sistema.Location = new System.Drawing.Point(17, 71);
+            this.grp_resumen_sistema.Location = new System.Drawing.Point(13, 58);
+            this.grp_resumen_sistema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grp_resumen_sistema.Name = "grp_resumen_sistema";
-            this.grp_resumen_sistema.Size = new System.Drawing.Size(430, 310);
+            this.grp_resumen_sistema.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grp_resumen_sistema.Size = new System.Drawing.Size(322, 252);
             this.grp_resumen_sistema.TabIndex = 0;
             this.grp_resumen_sistema.TabStop = false;
             this.grp_resumen_sistema.Text = "Resumen del Sistema";
@@ -106,9 +155,10 @@
             // 
             this.lbl_ingresos_totales.AutoSize = true;
             this.lbl_ingresos_totales.Font = new System.Drawing.Font("Lexend", 9F);
-            this.lbl_ingresos_totales.Location = new System.Drawing.Point(20, 50);
+            this.lbl_ingresos_totales.Location = new System.Drawing.Point(15, 41);
+            this.lbl_ingresos_totales.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ingresos_totales.Name = "lbl_ingresos_totales";
-            this.lbl_ingresos_totales.Size = new System.Drawing.Size(133, 24);
+            this.lbl_ingresos_totales.Size = new System.Drawing.Size(109, 19);
             this.lbl_ingresos_totales.TabIndex = 0;
             this.lbl_ingresos_totales.Text = "Ingresos Totales:";
             // 
@@ -118,19 +168,21 @@
             this.txt_ingresos_totales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_ingresos_totales.Font = new System.Drawing.Font("Lexend", 10F);
             this.txt_ingresos_totales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(174)))), ((int)(((byte)(192)))));
-            this.txt_ingresos_totales.Location = new System.Drawing.Point(20, 80);
+            this.txt_ingresos_totales.Location = new System.Drawing.Point(15, 65);
+            this.txt_ingresos_totales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_ingresos_totales.Name = "txt_ingresos_totales";
             this.txt_ingresos_totales.ReadOnly = true;
-            this.txt_ingresos_totales.Size = new System.Drawing.Size(390, 28);
+            this.txt_ingresos_totales.Size = new System.Drawing.Size(293, 24);
             this.txt_ingresos_totales.TabIndex = 1;
             // 
             // lbl_pagos_electronicos
             // 
             this.lbl_pagos_electronicos.AutoSize = true;
             this.lbl_pagos_electronicos.Font = new System.Drawing.Font("Lexend", 9F);
-            this.lbl_pagos_electronicos.Location = new System.Drawing.Point(20, 130);
+            this.lbl_pagos_electronicos.Location = new System.Drawing.Point(15, 106);
+            this.lbl_pagos_electronicos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_pagos_electronicos.Name = "lbl_pagos_electronicos";
-            this.lbl_pagos_electronicos.Size = new System.Drawing.Size(237, 24);
+            this.lbl_pagos_electronicos.Size = new System.Drawing.Size(194, 19);
             this.lbl_pagos_electronicos.TabIndex = 2;
             this.lbl_pagos_electronicos.Text = "Tarjetas / Transferencias (RD$):";
             // 
@@ -140,10 +192,11 @@
             this.txt_pagos_electronicos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_pagos_electronicos.Font = new System.Drawing.Font("Lexend", 10F);
             this.txt_pagos_electronicos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(174)))), ((int)(((byte)(192)))));
-            this.txt_pagos_electronicos.Location = new System.Drawing.Point(20, 160);
+            this.txt_pagos_electronicos.Location = new System.Drawing.Point(15, 130);
+            this.txt_pagos_electronicos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_pagos_electronicos.Name = "txt_pagos_electronicos";
             this.txt_pagos_electronicos.ReadOnly = true;
-            this.txt_pagos_electronicos.Size = new System.Drawing.Size(390, 28);
+            this.txt_pagos_electronicos.Size = new System.Drawing.Size(293, 24);
             this.txt_pagos_electronicos.TabIndex = 3;
             // 
             // lbl_efectivo_sistema
@@ -151,9 +204,10 @@
             this.lbl_efectivo_sistema.AutoSize = true;
             this.lbl_efectivo_sistema.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold);
             this.lbl_efectivo_sistema.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
-            this.lbl_efectivo_sistema.Location = new System.Drawing.Point(20, 210);
+            this.lbl_efectivo_sistema.Location = new System.Drawing.Point(15, 171);
+            this.lbl_efectivo_sistema.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_efectivo_sistema.Name = "lbl_efectivo_sistema";
-            this.lbl_efectivo_sistema.Size = new System.Drawing.Size(205, 24);
+            this.lbl_efectivo_sistema.Size = new System.Drawing.Size(164, 19);
             this.lbl_efectivo_sistema.TabIndex = 4;
             this.lbl_efectivo_sistema.Text = "Efectivo Esperado (RD$):";
             // 
@@ -163,10 +217,11 @@
             this.txt_efectivo_sistema.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_efectivo_sistema.Font = new System.Drawing.Font("Lexend", 12F, System.Drawing.FontStyle.Bold);
             this.txt_efectivo_sistema.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
-            this.txt_efectivo_sistema.Location = new System.Drawing.Point(20, 240);
+            this.txt_efectivo_sistema.Location = new System.Drawing.Point(15, 195);
+            this.txt_efectivo_sistema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_efectivo_sistema.Name = "txt_efectivo_sistema";
             this.txt_efectivo_sistema.ReadOnly = true;
-            this.txt_efectivo_sistema.Size = new System.Drawing.Size(390, 32);
+            this.txt_efectivo_sistema.Size = new System.Drawing.Size(293, 27);
             this.txt_efectivo_sistema.TabIndex = 5;
             this.txt_efectivo_sistema.Text = "0.00";
             // 
@@ -180,9 +235,11 @@
             this.grp_conteo_fisico.Controls.Add(this.txt_observaciones);
             this.grp_conteo_fisico.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold);
             this.grp_conteo_fisico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.grp_conteo_fisico.Location = new System.Drawing.Point(487, 71);
+            this.grp_conteo_fisico.Location = new System.Drawing.Point(365, 58);
+            this.grp_conteo_fisico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grp_conteo_fisico.Name = "grp_conteo_fisico";
-            this.grp_conteo_fisico.Size = new System.Drawing.Size(430, 310);
+            this.grp_conteo_fisico.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grp_conteo_fisico.Size = new System.Drawing.Size(322, 252);
             this.grp_conteo_fisico.TabIndex = 1;
             this.grp_conteo_fisico.TabStop = false;
             this.grp_conteo_fisico.Text = "Conteo Físico";
@@ -191,9 +248,10 @@
             // 
             this.lbl_efectivo_caja.AutoSize = true;
             this.lbl_efectivo_caja.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold);
-            this.lbl_efectivo_caja.Location = new System.Drawing.Point(20, 50);
+            this.lbl_efectivo_caja.Location = new System.Drawing.Point(15, 41);
+            this.lbl_efectivo_caja.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_efectivo_caja.Name = "lbl_efectivo_caja";
-            this.lbl_efectivo_caja.Size = new System.Drawing.Size(187, 24);
+            this.lbl_efectivo_caja.Size = new System.Drawing.Size(150, 19);
             this.lbl_efectivo_caja.TabIndex = 0;
             this.lbl_efectivo_caja.Text = "Efectivo Físico (RD$) *:";
             // 
@@ -202,18 +260,20 @@
             this.txt_efectivo_caja.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_efectivo_caja.Font = new System.Drawing.Font("Lexend", 12F, System.Drawing.FontStyle.Bold);
             this.txt_efectivo_caja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.txt_efectivo_caja.Location = new System.Drawing.Point(20, 80);
+            this.txt_efectivo_caja.Location = new System.Drawing.Point(15, 65);
+            this.txt_efectivo_caja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_efectivo_caja.Name = "txt_efectivo_caja";
-            this.txt_efectivo_caja.Size = new System.Drawing.Size(390, 32);
+            this.txt_efectivo_caja.Size = new System.Drawing.Size(293, 27);
             this.txt_efectivo_caja.TabIndex = 1;
             // 
             // lbl_diferencia
             // 
             this.lbl_diferencia.AutoSize = true;
             this.lbl_diferencia.Font = new System.Drawing.Font("Lexend", 9F);
-            this.lbl_diferencia.Location = new System.Drawing.Point(20, 130);
+            this.lbl_diferencia.Location = new System.Drawing.Point(15, 106);
+            this.lbl_diferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_diferencia.Name = "lbl_diferencia";
-            this.lbl_diferencia.Size = new System.Drawing.Size(237, 24);
+            this.lbl_diferencia.Size = new System.Drawing.Size(194, 19);
             this.lbl_diferencia.TabIndex = 2;
             this.lbl_diferencia.Text = "Diferencia (Sobrante/Faltante):";
             // 
@@ -223,19 +283,21 @@
             this.txt_diferencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_diferencia.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold);
             this.txt_diferencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(174)))), ((int)(((byte)(192)))));
-            this.txt_diferencia.Location = new System.Drawing.Point(20, 160);
+            this.txt_diferencia.Location = new System.Drawing.Point(15, 130);
+            this.txt_diferencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_diferencia.Name = "txt_diferencia";
             this.txt_diferencia.ReadOnly = true;
-            this.txt_diferencia.Size = new System.Drawing.Size(390, 28);
+            this.txt_diferencia.Size = new System.Drawing.Size(293, 24);
             this.txt_diferencia.TabIndex = 3;
             // 
             // lbl_observaciones
             // 
             this.lbl_observaciones.AutoSize = true;
             this.lbl_observaciones.Font = new System.Drawing.Font("Lexend", 9F);
-            this.lbl_observaciones.Location = new System.Drawing.Point(20, 210);
+            this.lbl_observaciones.Location = new System.Drawing.Point(15, 171);
+            this.lbl_observaciones.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_observaciones.Name = "lbl_observaciones";
-            this.lbl_observaciones.Size = new System.Drawing.Size(121, 24);
+            this.lbl_observaciones.Size = new System.Drawing.Size(99, 19);
             this.lbl_observaciones.TabIndex = 4;
             this.lbl_observaciones.Text = "Observaciones:";
             // 
@@ -243,24 +305,26 @@
             // 
             this.txt_observaciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_observaciones.Font = new System.Drawing.Font("Lexend", 10F);
-            this.txt_observaciones.Location = new System.Drawing.Point(20, 240);
+            this.txt_observaciones.Location = new System.Drawing.Point(15, 195);
+            this.txt_observaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_observaciones.Multiline = true;
             this.txt_observaciones.Name = "txt_observaciones";
-            this.txt_observaciones.Size = new System.Drawing.Size(390, 50);
+            this.txt_observaciones.Size = new System.Drawing.Size(293, 41);
             this.txt_observaciones.TabIndex = 5;
             // 
             // pnl_acciones
             // 
-            this.pnl_acciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.pnl_acciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_acciones.BackColor = System.Drawing.Color.White;
             this.pnl_acciones.Controls.Add(this.btn_confirmar_cierre);
             this.pnl_acciones.Controls.Add(this.btn_imprimir);
             this.pnl_acciones.Controls.Add(this.btn_cerrar);
-            this.pnl_acciones.Location = new System.Drawing.Point(30, 517);
+            this.pnl_acciones.Location = new System.Drawing.Point(22, 420);
+            this.pnl_acciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_acciones.Name = "pnl_acciones";
-            this.pnl_acciones.Padding = new System.Windows.Forms.Padding(15);
-            this.pnl_acciones.Size = new System.Drawing.Size(943, 70);
+            this.pnl_acciones.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.pnl_acciones.Size = new System.Drawing.Size(707, 57);
             this.pnl_acciones.TabIndex = 3;
             // 
             // btn_confirmar_cierre
@@ -270,9 +334,10 @@
             this.btn_confirmar_cierre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_confirmar_cierre.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_confirmar_cierre.ForeColor = System.Drawing.Color.White;
-            this.btn_confirmar_cierre.Location = new System.Drawing.Point(20, 15);
+            this.btn_confirmar_cierre.Location = new System.Drawing.Point(15, 12);
+            this.btn_confirmar_cierre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_confirmar_cierre.Name = "btn_confirmar_cierre";
-            this.btn_confirmar_cierre.Size = new System.Drawing.Size(180, 40);
+            this.btn_confirmar_cierre.Size = new System.Drawing.Size(135, 32);
             this.btn_confirmar_cierre.TabIndex = 0;
             this.btn_confirmar_cierre.Text = "Confirmar Cierre";
             this.btn_confirmar_cierre.UseVisualStyleBackColor = false;
@@ -284,9 +349,10 @@
             this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_imprimir.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_imprimir.ForeColor = System.Drawing.Color.White;
-            this.btn_imprimir.Location = new System.Drawing.Point(220, 15);
+            this.btn_imprimir.Location = new System.Drawing.Point(165, 12);
+            this.btn_imprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_imprimir.Name = "btn_imprimir";
-            this.btn_imprimir.Size = new System.Drawing.Size(160, 40);
+            this.btn_imprimir.Size = new System.Drawing.Size(120, 32);
             this.btn_imprimir.TabIndex = 1;
             this.btn_imprimir.Text = "Imprimir Reporte";
             this.btn_imprimir.UseVisualStyleBackColor = false;
@@ -299,64 +365,26 @@
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cerrar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_cerrar.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrar.Location = new System.Drawing.Point(793, 15);
+            this.btn_cerrar.Location = new System.Drawing.Point(595, 12);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(130, 40);
+            this.btn_cerrar.Size = new System.Drawing.Size(98, 32);
             this.btn_cerrar.TabIndex = 2;
             this.btn_cerrar.Text = "Cancelar";
             this.btn_cerrar.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lexend Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(66, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 27);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Último cuadre:";
-            // 
-            // lbl_fecha_ultimo_cuadre
-            // 
-            this.lbl_fecha_ultimo_cuadre.AutoSize = true;
-            this.lbl_fecha_ultimo_cuadre.Font = new System.Drawing.Font("Lexend Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_fecha_ultimo_cuadre.Location = new System.Drawing.Point(206, 20);
-            this.lbl_fecha_ultimo_cuadre.Name = "lbl_fecha_ultimo_cuadre";
-            this.lbl_fecha_ultimo_cuadre.Size = new System.Drawing.Size(206, 27);
-            this.lbl_fecha_ultimo_cuadre.TabIndex = 7;
-            this.lbl_fecha_ultimo_cuadre.Text = "07/07/2026 00:00:00 PM";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lexend Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(506, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 27);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Fecha Actual:";
-            // 
-            // lbl_fecha_actual
-            // 
-            this.lbl_fecha_actual.AutoSize = true;
-            this.lbl_fecha_actual.Font = new System.Drawing.Font("Lexend Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_fecha_actual.Location = new System.Drawing.Point(636, 20);
-            this.lbl_fecha_actual.Name = "lbl_fecha_actual";
-            this.lbl_fecha_actual.Size = new System.Drawing.Size(206, 27);
-            this.lbl_fecha_actual.TabIndex = 9;
-            this.lbl_fecha_actual.Text = "07/07/2026 00:00:00 PM";
-            // 
             // modulo_de_cierre_de_caja
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1003, 618);
+            this.ClientSize = new System.Drawing.Size(752, 502);
             this.Controls.Add(this.pnl_acciones);
             this.Controls.Add(this.panel_card);
             this.Controls.Add(this.lbl_subtitulo);
             this.Controls.Add(this.lbl_titulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "modulo_de_cierre_de_caja";
