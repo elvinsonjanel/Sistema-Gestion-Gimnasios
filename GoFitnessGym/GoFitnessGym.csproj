@@ -173,11 +173,23 @@
     <Compile Include="modulo_de_registrar_productos.Designer.cs">
       <DependentUpon>modulo_de_registrar_productos.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_registrar_roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_registrar_roles.Designer.cs">
+      <DependentUpon>modulo_de_registrar_roles.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_registrar_usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modulo_de_registrar_usuarios.Designer.cs">
       <DependentUpon>modulo_de_registrar_usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modulo_de_roles_y_permisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_roles_y_permisos.Designer.cs">
+      <DependentUpon>modulo_de_roles_y_permisos.cs</DependentUpon>
     </Compile>
     <Compile Include="modulo_de_usuarios.cs">
       <SubType>Form</SubType>
