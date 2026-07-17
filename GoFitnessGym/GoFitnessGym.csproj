@@ -256,6 +256,9 @@
     <EmbeddedResource Include="consulta_de_clientes.resx">
       <DependentUpon>consulta_de_clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="detalle_de_cliente.resx">
+      <DependentUpon>detalle_de_cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="detalle_de_usuario.resx">
       <DependentUpon>detalle_de_usuario.cs</DependentUpon>
     </EmbeddedResource>
