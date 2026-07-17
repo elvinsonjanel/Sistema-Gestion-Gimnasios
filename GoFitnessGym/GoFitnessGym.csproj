@@ -89,6 +89,12 @@
     <Compile Include="detalle_de_cliente.Designer.cs">
       <DependentUpon>detalle_de_cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="detalle_de_inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detalle_de_inventario.Designer.cs">
+      <DependentUpon>detalle_de_inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="detalle_de_producto.cs">
       <SubType>Form</SubType>
     </Compile>
