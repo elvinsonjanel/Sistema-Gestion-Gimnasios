@@ -57,9 +57,10 @@
             this.lbl_titulo.AutoSize = true;
             this.lbl_titulo.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.lbl_titulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(44)))));
-            this.lbl_titulo.Location = new System.Drawing.Point(30, 20);
+            this.lbl_titulo.Location = new System.Drawing.Point(22, 16);
+            this.lbl_titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(230, 31);
+            this.lbl_titulo.Size = new System.Drawing.Size(167, 26);
             this.lbl_titulo.TabIndex = 0;
             this.lbl_titulo.Text = "Gestionar Pagos";
             // 
@@ -68,15 +69,16 @@
             this.lbl_subtitulo.AutoSize = true;
             this.lbl_subtitulo.Font = new System.Drawing.Font("Lexend", 10F);
             this.lbl_subtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
-            this.lbl_subtitulo.Location = new System.Drawing.Point(32, 52);
+            this.lbl_subtitulo.Location = new System.Drawing.Point(24, 42);
+            this.lbl_subtitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_subtitulo.Name = "lbl_subtitulo";
-            this.lbl_subtitulo.Size = new System.Drawing.Size(445, 27);
+            this.lbl_subtitulo.Size = new System.Drawing.Size(331, 22);
             this.lbl_subtitulo.TabIndex = 1;
             this.lbl_subtitulo.Text = "Administre los pagos registrados en el sistema";
             // 
             // pnl_busqueda
             // 
-            this.pnl_busqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.pnl_busqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_busqueda.BackColor = System.Drawing.Color.White;
             this.pnl_busqueda.Controls.Add(this.lbl_buscar);
@@ -87,11 +89,11 @@
             this.pnl_busqueda.Controls.Add(this.cbo_filtro_estado);
             this.pnl_busqueda.Controls.Add(this.btn_buscar);
             this.pnl_busqueda.Controls.Add(this.btn_limpiar);
-            this.pnl_busqueda.Location = new System.Drawing.Point(30, 85);
-            this.pnl_busqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_busqueda.Location = new System.Drawing.Point(22, 69);
+            this.pnl_busqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_busqueda.Name = "pnl_busqueda";
-            this.pnl_busqueda.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
-            this.pnl_busqueda.Size = new System.Drawing.Size(940, 75);
+            this.pnl_busqueda.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.pnl_busqueda.Size = new System.Drawing.Size(705, 61);
             this.pnl_busqueda.TabIndex = 2;
             // 
             // lbl_buscar
@@ -99,23 +101,24 @@
             this.lbl_buscar.AutoSize = true;
             this.lbl_buscar.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold);
             this.lbl_buscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lbl_buscar.Location = new System.Drawing.Point(20, 20);
+            this.lbl_buscar.Location = new System.Drawing.Point(7, 18);
+            this.lbl_buscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_buscar.Name = "lbl_buscar";
-            this.lbl_buscar.Size = new System.Drawing.Size(67, 24);
+            this.lbl_buscar.Size = new System.Drawing.Size(54, 19);
             this.lbl_buscar.TabIndex = 0;
             this.lbl_buscar.Text = "Buscar:";
             // 
             // txt_busqueda
             // 
-            this.txt_busqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.txt_busqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_busqueda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_busqueda.Font = new System.Drawing.Font("Lexend", 10F);
             this.txt_busqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.txt_busqueda.Location = new System.Drawing.Point(87, 17);
-            this.txt_busqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_busqueda.Location = new System.Drawing.Point(65, 14);
+            this.txt_busqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_busqueda.Name = "txt_busqueda";
-            this.txt_busqueda.Size = new System.Drawing.Size(196, 28);
+            this.txt_busqueda.Size = new System.Drawing.Size(148, 24);
             this.txt_busqueda.TabIndex = 1;
             // 
             // lbl_filtro_campo
@@ -123,9 +126,10 @@
             this.lbl_filtro_campo.AutoSize = true;
             this.lbl_filtro_campo.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold);
             this.lbl_filtro_campo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lbl_filtro_campo.Location = new System.Drawing.Point(293, 20);
+            this.lbl_filtro_campo.Location = new System.Drawing.Point(220, 16);
+            this.lbl_filtro_campo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_filtro_campo.Name = "lbl_filtro_campo";
-            this.lbl_filtro_campo.Size = new System.Drawing.Size(68, 24);
+            this.lbl_filtro_campo.Size = new System.Drawing.Size(56, 19);
             this.lbl_filtro_campo.TabIndex = 2;
             this.lbl_filtro_campo.Text = "Campo:";
             // 
@@ -141,10 +145,10 @@
             "Cliente",
             "Membresía",
             "Método de pago"});
-            this.cbo_filtro_campo.Location = new System.Drawing.Point(356, 16);
-            this.cbo_filtro_campo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbo_filtro_campo.Location = new System.Drawing.Point(267, 13);
+            this.cbo_filtro_campo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbo_filtro_campo.Name = "cbo_filtro_campo";
-            this.cbo_filtro_campo.Size = new System.Drawing.Size(152, 35);
+            this.cbo_filtro_campo.Size = new System.Drawing.Size(115, 29);
             this.cbo_filtro_campo.TabIndex = 3;
             // 
             // lbl_filtro_estado
@@ -152,9 +156,10 @@
             this.lbl_filtro_estado.AutoSize = true;
             this.lbl_filtro_estado.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold);
             this.lbl_filtro_estado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lbl_filtro_estado.Location = new System.Drawing.Point(517, 20);
+            this.lbl_filtro_estado.Location = new System.Drawing.Point(388, 16);
+            this.lbl_filtro_estado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_filtro_estado.Name = "lbl_filtro_estado";
-            this.lbl_filtro_estado.Size = new System.Drawing.Size(67, 24);
+            this.lbl_filtro_estado.Size = new System.Drawing.Size(55, 19);
             this.lbl_filtro_estado.TabIndex = 4;
             this.lbl_filtro_estado.Text = "Estado:";
             // 
@@ -171,10 +176,10 @@
             "Completados",
             "Pendientes",
             "Vencidos"});
-            this.cbo_filtro_estado.Location = new System.Drawing.Point(577, 16);
-            this.cbo_filtro_estado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbo_filtro_estado.Location = new System.Drawing.Point(433, 13);
+            this.cbo_filtro_estado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbo_filtro_estado.Name = "cbo_filtro_estado";
-            this.cbo_filtro_estado.Size = new System.Drawing.Size(134, 35);
+            this.cbo_filtro_estado.Size = new System.Drawing.Size(102, 29);
             this.cbo_filtro_estado.TabIndex = 5;
             // 
             // btn_buscar
@@ -185,10 +190,10 @@
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_buscar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buscar.ForeColor = System.Drawing.Color.White;
-            this.btn_buscar.Location = new System.Drawing.Point(725, 14);
-            this.btn_buscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_buscar.Location = new System.Drawing.Point(544, 11);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(89, 32);
+            this.btn_buscar.Size = new System.Drawing.Size(67, 26);
             this.btn_buscar.TabIndex = 6;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = false;
@@ -201,27 +206,27 @@
             this.btn_limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_limpiar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_limpiar.ForeColor = System.Drawing.Color.White;
-            this.btn_limpiar.Location = new System.Drawing.Point(823, 14);
-            this.btn_limpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_limpiar.Location = new System.Drawing.Point(617, 11);
+            this.btn_limpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_limpiar.Name = "btn_limpiar";
-            this.btn_limpiar.Size = new System.Drawing.Size(89, 32);
+            this.btn_limpiar.Size = new System.Drawing.Size(67, 26);
             this.btn_limpiar.TabIndex = 7;
             this.btn_limpiar.Text = "Limpiar";
             this.btn_limpiar.UseVisualStyleBackColor = false;
             // 
             // pnl_tabla
             // 
-            this.pnl_tabla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.pnl_tabla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_tabla.BackColor = System.Drawing.Color.White;
             this.pnl_tabla.Controls.Add(this.dgv_pagos);
             this.pnl_tabla.Controls.Add(this.lbl_total_registros);
-            this.pnl_tabla.Location = new System.Drawing.Point(30, 170);
-            this.pnl_tabla.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_tabla.Location = new System.Drawing.Point(22, 138);
+            this.pnl_tabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_tabla.Name = "pnl_tabla";
-            this.pnl_tabla.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.pnl_tabla.Size = new System.Drawing.Size(940, 264);
+            this.pnl_tabla.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.pnl_tabla.Size = new System.Drawing.Size(705, 214);
             this.pnl_tabla.TabIndex = 3;
             // 
             // dgv_pagos
@@ -247,8 +252,8 @@
             this.dgv_pagos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_pagos.EnableHeadersVisualStyles = false;
             this.dgv_pagos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
-            this.dgv_pagos.Location = new System.Drawing.Point(15, 15);
-            this.dgv_pagos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_pagos.Location = new System.Drawing.Point(11, 12);
+            this.dgv_pagos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_pagos.MultiSelect = false;
             this.dgv_pagos.Name = "dgv_pagos";
             this.dgv_pagos.ReadOnly = true;
@@ -256,7 +261,7 @@
             this.dgv_pagos.RowHeadersWidth = 51;
             this.dgv_pagos.RowTemplate.Height = 35;
             this.dgv_pagos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_pagos.Size = new System.Drawing.Size(910, 204);
+            this.dgv_pagos.Size = new System.Drawing.Size(683, 166);
             this.dgv_pagos.TabIndex = 0;
             // 
             // col_codigo
@@ -327,16 +332,17 @@
             this.lbl_total_registros.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lbl_total_registros.Font = new System.Drawing.Font("Lexend", 9F);
             this.lbl_total_registros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
-            this.lbl_total_registros.Location = new System.Drawing.Point(15, 219);
+            this.lbl_total_registros.Location = new System.Drawing.Point(11, 178);
+            this.lbl_total_registros.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_total_registros.Name = "lbl_total_registros";
-            this.lbl_total_registros.Size = new System.Drawing.Size(910, 30);
+            this.lbl_total_registros.Size = new System.Drawing.Size(683, 24);
             this.lbl_total_registros.TabIndex = 1;
             this.lbl_total_registros.Text = "Total de registros: 0";
             this.lbl_total_registros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnl_acciones
             // 
-            this.pnl_acciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.pnl_acciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_acciones.BackColor = System.Drawing.Color.White;
             this.pnl_acciones.Controls.Add(this.btn_nuevo);
@@ -345,89 +351,84 @@
             this.pnl_acciones.Controls.Add(this.btn_imprimir);
             this.pnl_acciones.Controls.Add(this.btn_eliminar);
             this.pnl_acciones.Controls.Add(this.btn_cerrar);
-            this.pnl_acciones.Location = new System.Drawing.Point(30, 450);
-            this.pnl_acciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_acciones.Location = new System.Drawing.Point(22, 366);
+            this.pnl_acciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_acciones.Name = "pnl_acciones";
-            this.pnl_acciones.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.pnl_acciones.Size = new System.Drawing.Size(940, 70);
+            this.pnl_acciones.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.pnl_acciones.Size = new System.Drawing.Size(705, 57);
             this.pnl_acciones.TabIndex = 4;
             // 
             // btn_nuevo
             // 
-            this.btn_nuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_nuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
             this.btn_nuevo.FlatAppearance.BorderSize = 0;
             this.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_nuevo.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nuevo.ForeColor = System.Drawing.Color.White;
-            this.btn_nuevo.Location = new System.Drawing.Point(20, 15);
-            this.btn_nuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_nuevo.Location = new System.Drawing.Point(15, 12);
+            this.btn_nuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_nuevo.Name = "btn_nuevo";
-            this.btn_nuevo.Size = new System.Drawing.Size(110, 40);
+            this.btn_nuevo.Size = new System.Drawing.Size(82, 32);
             this.btn_nuevo.TabIndex = 0;
             this.btn_nuevo.Text = "Nuevo";
             this.btn_nuevo.UseVisualStyleBackColor = false;
             // 
             // btn_editar
             // 
-            this.btn_editar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
             this.btn_editar.FlatAppearance.BorderSize = 0;
             this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_editar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_editar.ForeColor = System.Drawing.Color.White;
-            this.btn_editar.Location = new System.Drawing.Point(140, 15);
-            this.btn_editar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_editar.Location = new System.Drawing.Point(105, 12);
+            this.btn_editar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_editar.Name = "btn_editar";
-            this.btn_editar.Size = new System.Drawing.Size(110, 40);
+            this.btn_editar.Size = new System.Drawing.Size(82, 32);
             this.btn_editar.TabIndex = 1;
             this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = false;
             // 
             // btn_ver_detalle
             // 
-            this.btn_ver_detalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_ver_detalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
             this.btn_ver_detalle.FlatAppearance.BorderSize = 0;
             this.btn_ver_detalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ver_detalle.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ver_detalle.ForeColor = System.Drawing.Color.White;
-            this.btn_ver_detalle.Location = new System.Drawing.Point(260, 15);
-            this.btn_ver_detalle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_ver_detalle.Location = new System.Drawing.Point(195, 12);
+            this.btn_ver_detalle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_ver_detalle.Name = "btn_ver_detalle";
-            this.btn_ver_detalle.Size = new System.Drawing.Size(120, 40);
+            this.btn_ver_detalle.Size = new System.Drawing.Size(90, 32);
             this.btn_ver_detalle.TabIndex = 2;
             this.btn_ver_detalle.Text = "Ver Detalle";
             this.btn_ver_detalle.UseVisualStyleBackColor = false;
             // 
             // btn_imprimir
             // 
-            this.btn_imprimir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_imprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
             this.btn_imprimir.FlatAppearance.BorderSize = 0;
             this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_imprimir.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_imprimir.ForeColor = System.Drawing.Color.White;
-            this.btn_imprimir.Location = new System.Drawing.Point(390, 15);
-            this.btn_imprimir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_imprimir.Location = new System.Drawing.Point(292, 12);
+            this.btn_imprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_imprimir.Name = "btn_imprimir";
-            this.btn_imprimir.Size = new System.Drawing.Size(110, 40);
+            this.btn_imprimir.Size = new System.Drawing.Size(82, 32);
             this.btn_imprimir.TabIndex = 3;
             this.btn_imprimir.Text = "Imprimir";
             this.btn_imprimir.UseVisualStyleBackColor = false;
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.btn_eliminar.FlatAppearance.BorderSize = 0;
             this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_eliminar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_eliminar.ForeColor = System.Drawing.Color.White;
-            this.btn_eliminar.Location = new System.Drawing.Point(510, 15);
-            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_eliminar.Location = new System.Drawing.Point(382, 12);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(110, 40);
+            this.btn_eliminar.Size = new System.Drawing.Size(82, 32);
             this.btn_eliminar.TabIndex = 4;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = false;
@@ -440,27 +441,27 @@
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cerrar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrar.Location = new System.Drawing.Point(790, 15);
-            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cerrar.Location = new System.Drawing.Point(592, 12);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(130, 40);
+            this.btn_cerrar.Size = new System.Drawing.Size(98, 32);
             this.btn_cerrar.TabIndex = 5;
             this.btn_cerrar.Text = "Cerrar";
             this.btn_cerrar.UseVisualStyleBackColor = false;
             // 
             // modulo_de_pagos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1000, 551);
+            this.ClientSize = new System.Drawing.Size(750, 456);
             this.Controls.Add(this.pnl_acciones);
             this.Controls.Add(this.pnl_tabla);
             this.Controls.Add(this.pnl_busqueda);
             this.Controls.Add(this.lbl_subtitulo);
             this.Controls.Add(this.lbl_titulo);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(604, 495);
             this.Name = "modulo_de_pagos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestionar Pagos - Go Fitness";
