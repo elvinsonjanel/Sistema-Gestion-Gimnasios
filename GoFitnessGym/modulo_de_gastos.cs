@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GoFitnessGym
 {
-    public partial class modulo_de_notificaciones_automaticas : Form
+    public partial class modulo_de_gastos : Form
     {
-        public modulo_de_notificaciones_automaticas()
+        public modulo_de_gastos()
         {
             InitializeComponent();
         }

@@ -29,13 +29,32 @@ namespace GoFitnessGym
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_general = new System.Windows.Forms.Panel();
             this.btn_ingresos = new System.Windows.Forms.Button();
             this.btn_ventas = new System.Windows.Forms.Button();
             this.btn_facturas = new System.Windows.Forms.Button();
+            this.panel_ingresos = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.btn_limpiar_consulta_ingresos = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_ventas = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -76,37 +95,18 @@ namespace GoFitnessGym
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbl_buscar = new System.Windows.Forms.Label();
-            this.panel_ingresos = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.btn_limpiar_consulta_ingresos = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel_general.SuspendLayout();
+            this.panel_ingresos.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel_ventas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel_facturas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_facturas)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel_ingresos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_general
@@ -160,6 +160,208 @@ namespace GoFitnessGym
             this.btn_facturas.UseVisualStyleBackColor = false;
             this.btn_facturas.Click += new System.EventHandler(this.btn_facturas_Click);
             // 
+            // panel_ingresos
+            // 
+            this.panel_ingresos.BackColor = System.Drawing.Color.White;
+            this.panel_ingresos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_ingresos.Controls.Add(this.button3);
+            this.panel_ingresos.Controls.Add(this.label9);
+            this.panel_ingresos.Controls.Add(this.label10);
+            this.panel_ingresos.Controls.Add(this.button2);
+            this.panel_ingresos.Controls.Add(this.panel3);
+            this.panel_ingresos.Controls.Add(this.dataGridView2);
+            this.panel_ingresos.Location = new System.Drawing.Point(3, 56);
+            this.panel_ingresos.Name = "panel_ingresos";
+            this.panel_ingresos.Size = new System.Drawing.Size(750, 415);
+            this.panel_ingresos.TabIndex = 7;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(3, 375);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(105, 34);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Ver Recibo";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(591, 390);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(113, 19);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Transacciones: 0";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(591, 376);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(142, 19);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Total Ingresos: $0.00";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkGray;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(116, 375);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 34);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Exportar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.dateTimePicker4);
+            this.panel3.Controls.Add(this.dateTimePicker5);
+            this.panel3.Controls.Add(this.btn_limpiar_consulta_ingresos);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Location = new System.Drawing.Point(2, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(742, 52);
+            this.panel3.TabIndex = 8;
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker4.Location = new System.Drawing.Point(521, 18);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(82, 21);
+            this.dateTimePicker4.TabIndex = 6;
+            this.dateTimePicker4.Value = new System.DateTime(2026, 7, 15, 0, 0, 0, 0);
+            this.dateTimePicker4.Visible = false;
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker5.Location = new System.Drawing.Point(373, 17);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(89, 21);
+            this.dateTimePicker5.TabIndex = 5;
+            this.dateTimePicker5.Value = new System.DateTime(2026, 7, 15, 0, 0, 0, 0);
+            this.dateTimePicker5.Visible = false;
+            // 
+            // btn_limpiar_consulta_ingresos
+            // 
+            this.btn_limpiar_consulta_ingresos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
+            this.btn_limpiar_consulta_ingresos.FlatAppearance.BorderSize = 0;
+            this.btn_limpiar_consulta_ingresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_limpiar_consulta_ingresos.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar_consulta_ingresos.ForeColor = System.Drawing.Color.White;
+            this.btn_limpiar_consulta_ingresos.Location = new System.Drawing.Point(626, 11);
+            this.btn_limpiar_consulta_ingresos.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_limpiar_consulta_ingresos.Name = "btn_limpiar_consulta_ingresos";
+            this.btn_limpiar_consulta_ingresos.Size = new System.Drawing.Size(105, 34);
+            this.btn_limpiar_consulta_ingresos.TabIndex = 10;
+            this.btn_limpiar_consulta_ingresos.Text = "Limpiar";
+            this.btn_limpiar_consulta_ingresos.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(465, 17);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(50, 21);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Hasta:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(314, 17);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 21);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Desde:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(182, 14);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(115, 24);
+            this.textBox3.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(5, 17);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(181, 21);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Buscar Concepto o Recibo:";
+            // 
+            // dataGridView2
+            // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
+            this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
+            this.dataGridView2.Location = new System.Drawing.Point(2, 61);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(742, 310);
+            this.dataGridView2.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "IDPago";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Fecha/Hora";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Concepto/Detalle";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Metodo Pago";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Monto";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
             // panel_ventas
             // 
             this.panel_ventas.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -192,8 +394,8 @@ namespace GoFitnessGym
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -452,8 +654,8 @@ namespace GoFitnessGym
             // 
             // dgv_facturas
             // 
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_facturas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_facturas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_facturas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_facturas.BackgroundColor = System.Drawing.Color.White;
             this.dgv_facturas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -590,208 +792,6 @@ namespace GoFitnessGym
             this.lbl_buscar.Text = "Buscar Cliente o IDFactura:";
             this.lbl_buscar.Click += new System.EventHandler(this.label1_Click);
             // 
-            // panel_ingresos
-            // 
-            this.panel_ingresos.BackColor = System.Drawing.Color.White;
-            this.panel_ingresos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_ingresos.Controls.Add(this.button3);
-            this.panel_ingresos.Controls.Add(this.label9);
-            this.panel_ingresos.Controls.Add(this.label10);
-            this.panel_ingresos.Controls.Add(this.button2);
-            this.panel_ingresos.Controls.Add(this.panel3);
-            this.panel_ingresos.Controls.Add(this.dataGridView2);
-            this.panel_ingresos.Location = new System.Drawing.Point(3, 56);
-            this.panel_ingresos.Name = "panel_ingresos";
-            this.panel_ingresos.Size = new System.Drawing.Size(750, 415);
-            this.panel_ingresos.TabIndex = 7;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(3, 375);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 34);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Ver Recibo";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(591, 390);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 19);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Transacciones: 0";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(591, 376);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(142, 19);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Total Ingresos: $0.00";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(116, 375);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 34);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Exportar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView2
-            // 
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.Location = new System.Drawing.Point(2, 61);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(742, 310);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "IDPago";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Fecha/Hora";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Concepto/Detalle";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Metodo Pago";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "Monto";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.dateTimePicker4);
-            this.panel3.Controls.Add(this.dateTimePicker5);
-            this.panel3.Controls.Add(this.btn_limpiar_consulta_ingresos);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Location = new System.Drawing.Point(2, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(742, 52);
-            this.panel3.TabIndex = 8;
-            // 
-            // dateTimePicker4
-            // 
-            this.dateTimePicker4.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(521, 18);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(82, 21);
-            this.dateTimePicker4.TabIndex = 6;
-            this.dateTimePicker4.Value = new System.DateTime(2026, 7, 15, 0, 0, 0, 0);
-            this.dateTimePicker4.Visible = false;
-            // 
-            // dateTimePicker5
-            // 
-            this.dateTimePicker5.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(373, 17);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(89, 21);
-            this.dateTimePicker5.TabIndex = 5;
-            this.dateTimePicker5.Value = new System.DateTime(2026, 7, 15, 0, 0, 0, 0);
-            this.dateTimePicker5.Visible = false;
-            // 
-            // btn_limpiar_consulta_ingresos
-            // 
-            this.btn_limpiar_consulta_ingresos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
-            this.btn_limpiar_consulta_ingresos.FlatAppearance.BorderSize = 0;
-            this.btn_limpiar_consulta_ingresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_limpiar_consulta_ingresos.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpiar_consulta_ingresos.ForeColor = System.Drawing.Color.White;
-            this.btn_limpiar_consulta_ingresos.Location = new System.Drawing.Point(626, 11);
-            this.btn_limpiar_consulta_ingresos.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_limpiar_consulta_ingresos.Name = "btn_limpiar_consulta_ingresos";
-            this.btn_limpiar_consulta_ingresos.Size = new System.Drawing.Size(105, 34);
-            this.btn_limpiar_consulta_ingresos.TabIndex = 10;
-            this.btn_limpiar_consulta_ingresos.Text = "Limpiar";
-            this.btn_limpiar_consulta_ingresos.UseVisualStyleBackColor = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(465, 17);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 21);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "Hasta:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(314, 17);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 21);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Desde:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(182, 14);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(115, 24);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Lexend", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(5, 17);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(181, 21);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Buscar Concepto o Recibo:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -826,6 +826,11 @@ namespace GoFitnessGym
             this.Load += new System.EventHandler(this.modulo_consulta_facturas_ventas_y_ingresos_Load);
             this.panel_general.ResumeLayout(false);
             this.panel_general.PerformLayout();
+            this.panel_ingresos.ResumeLayout(false);
+            this.panel_ingresos.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel_ventas.ResumeLayout(false);
             this.panel_ventas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -836,11 +841,6 @@ namespace GoFitnessGym
             ((System.ComponentModel.ISupportInitialize)(this.dgv_facturas)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel_ingresos.ResumeLayout(false);
-            this.panel_ingresos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
