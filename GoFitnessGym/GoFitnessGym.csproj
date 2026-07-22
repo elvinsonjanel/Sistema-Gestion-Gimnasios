@@ -155,6 +155,12 @@
     <Compile Include="modulo_de_editar_rol.Designer.cs">
       <DependentUpon>modulo_de_editar_rol.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_facturacion.Designer.cs">
+      <DependentUpon>modulo_de_facturacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_gastos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_editar_rol.resx">
       <DependentUpon>modulo_de_editar_rol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_facturacion.resx">
+      <DependentUpon>modulo_de_facturacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_gastos.resx">
       <DependentUpon>modulo_de_gastos.cs</DependentUpon>
