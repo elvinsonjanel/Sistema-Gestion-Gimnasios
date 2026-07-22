@@ -29,13 +29,10 @@ namespace GoFitnessGym
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_general = new System.Windows.Forms.Panel();
-            this.btn_ingresos = new System.Windows.Forms.Button();
-            this.btn_ventas = new System.Windows.Forms.Button();
-            this.btn_facturas = new System.Windows.Forms.Button();
             this.panel_ingresos = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -97,6 +94,10 @@ namespace GoFitnessGym
             this.lbl_buscar = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel_general.SuspendLayout();
             this.panel_ingresos.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -107,58 +108,19 @@ namespace GoFitnessGym
             this.panel_facturas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_facturas)).BeginInit();
             this.panel2.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_general
             // 
-            this.panel_general.Controls.Add(this.btn_ingresos);
-            this.panel_general.Controls.Add(this.btn_ventas);
-            this.panel_general.Controls.Add(this.btn_facturas);
-            this.panel_general.Controls.Add(this.panel_ingresos);
-            this.panel_general.Controls.Add(this.panel_ventas);
-            this.panel_general.Controls.Add(this.panel_facturas);
+            this.panel_general.Controls.Add(this.tabControl1);
             this.panel_general.Location = new System.Drawing.Point(12, 86);
             this.panel_general.Name = "panel_general";
             this.panel_general.Size = new System.Drawing.Size(776, 471);
             this.panel_general.TabIndex = 0;
-            // 
-            // btn_ingresos
-            // 
-            this.btn_ingresos.AutoSize = true;
-            this.btn_ingresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ingresos.Location = new System.Drawing.Point(177, 25);
-            this.btn_ingresos.Name = "btn_ingresos";
-            this.btn_ingresos.Size = new System.Drawing.Size(75, 25);
-            this.btn_ingresos.TabIndex = 3;
-            this.btn_ingresos.Text = "Ingresos";
-            this.btn_ingresos.UseVisualStyleBackColor = true;
-            this.btn_ingresos.Click += new System.EventHandler(this.btn_ingresos_Click);
-            // 
-            // btn_ventas
-            // 
-            this.btn_ventas.AutoSize = true;
-            this.btn_ventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ventas.Location = new System.Drawing.Point(96, 25);
-            this.btn_ventas.Name = "btn_ventas";
-            this.btn_ventas.Size = new System.Drawing.Size(75, 25);
-            this.btn_ventas.TabIndex = 2;
-            this.btn_ventas.Text = "Ventas";
-            this.btn_ventas.UseVisualStyleBackColor = true;
-            this.btn_ventas.Click += new System.EventHandler(this.btn_ventas_Click);
-            // 
-            // btn_facturas
-            // 
-            this.btn_facturas.AutoSize = true;
-            this.btn_facturas.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_facturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_facturas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_facturas.Location = new System.Drawing.Point(15, 25);
-            this.btn_facturas.Name = "btn_facturas";
-            this.btn_facturas.Size = new System.Drawing.Size(75, 25);
-            this.btn_facturas.TabIndex = 1;
-            this.btn_facturas.Text = "Facturas";
-            this.btn_facturas.UseVisualStyleBackColor = false;
-            this.btn_facturas.Click += new System.EventHandler(this.btn_facturas_Click);
             // 
             // panel_ingresos
             // 
@@ -170,9 +132,9 @@ namespace GoFitnessGym
             this.panel_ingresos.Controls.Add(this.button2);
             this.panel_ingresos.Controls.Add(this.panel3);
             this.panel_ingresos.Controls.Add(this.dataGridView2);
-            this.panel_ingresos.Location = new System.Drawing.Point(3, 56);
+            this.panel_ingresos.Location = new System.Drawing.Point(3, 3);
             this.panel_ingresos.Name = "panel_ingresos";
-            this.panel_ingresos.Size = new System.Drawing.Size(750, 415);
+            this.panel_ingresos.Size = new System.Drawing.Size(753, 423);
             this.panel_ingresos.TabIndex = 7;
             // 
             // button3
@@ -239,7 +201,7 @@ namespace GoFitnessGym
             this.panel3.Controls.Add(this.label15);
             this.panel3.Location = new System.Drawing.Point(2, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(742, 52);
+            this.panel3.Size = new System.Drawing.Size(746, 52);
             this.panel3.TabIndex = 8;
             // 
             // dateTimePicker4
@@ -316,11 +278,12 @@ namespace GoFitnessGym
             this.label15.Size = new System.Drawing.Size(181, 21);
             this.label15.TabIndex = 0;
             this.label15.Text = "Buscar Concepto o Recibo:";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // dataGridView2
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -334,7 +297,8 @@ namespace GoFitnessGym
             this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView2.Location = new System.Drawing.Point(2, 61);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(742, 310);
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.Size = new System.Drawing.Size(746, 310);
             this.dataGridView2.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn6
@@ -372,9 +336,9 @@ namespace GoFitnessGym
             this.panel_ventas.Controls.Add(this.label8);
             this.panel_ventas.Controls.Add(this.button1);
             this.panel_ventas.Controls.Add(this.panel1);
-            this.panel_ventas.Location = new System.Drawing.Point(3, 56);
+            this.panel_ventas.Location = new System.Drawing.Point(3, 3);
             this.panel_ventas.Name = "panel_ventas";
-            this.panel_ventas.Size = new System.Drawing.Size(750, 415);
+            this.panel_ventas.Size = new System.Drawing.Size(753, 423);
             this.panel_ventas.TabIndex = 7;
             // 
             // button4
@@ -410,7 +374,8 @@ namespace GoFitnessGym
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(2, 61);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(743, 310);
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(746, 310);
             this.dataGridView1.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -492,7 +457,7 @@ namespace GoFitnessGym
             this.panel1.Controls.Add(this.lbl_buscar_servicios);
             this.panel1.Location = new System.Drawing.Point(3, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(742, 52);
+            this.panel1.Size = new System.Drawing.Size(745, 52);
             this.panel1.TabIndex = 7;
             // 
             // dateTimePicker2
@@ -581,9 +546,9 @@ namespace GoFitnessGym
             this.panel_facturas.Controls.Add(this.btn_imprimir_ticket);
             this.panel_facturas.Controls.Add(this.dgv_facturas);
             this.panel_facturas.Controls.Add(this.panel2);
-            this.panel_facturas.Location = new System.Drawing.Point(3, 56);
+            this.panel_facturas.Location = new System.Drawing.Point(3, 3);
             this.panel_facturas.Name = "panel_facturas";
-            this.panel_facturas.Size = new System.Drawing.Size(750, 415);
+            this.panel_facturas.Size = new System.Drawing.Size(753, 423);
             this.panel_facturas.TabIndex = 0;
             this.panel_facturas.Visible = false;
             // 
@@ -591,7 +556,7 @@ namespace GoFitnessGym
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(593, 349);
+            this.label1.Location = new System.Drawing.Point(583, 349);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 19);
             this.label1.TabIndex = 11;
@@ -601,7 +566,7 @@ namespace GoFitnessGym
             // 
             this.lbl_facturas_encontradas.AutoSize = true;
             this.lbl_facturas_encontradas.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_facturas_encontradas.Location = new System.Drawing.Point(1, 349);
+            this.lbl_facturas_encontradas.Location = new System.Drawing.Point(6, 349);
             this.lbl_facturas_encontradas.Name = "lbl_facturas_encontradas";
             this.lbl_facturas_encontradas.Size = new System.Drawing.Size(161, 19);
             this.lbl_facturas_encontradas.TabIndex = 10;
@@ -654,8 +619,8 @@ namespace GoFitnessGym
             // 
             // dgv_facturas
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_facturas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_facturas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_facturas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_facturas.BackgroundColor = System.Drawing.Color.White;
             this.dgv_facturas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -669,7 +634,8 @@ namespace GoFitnessGym
             this.dgv_facturas.GridColor = System.Drawing.SystemColors.Control;
             this.dgv_facturas.Location = new System.Drawing.Point(3, 61);
             this.dgv_facturas.Name = "dgv_facturas";
-            this.dgv_facturas.Size = new System.Drawing.Size(741, 310);
+            this.dgv_facturas.RowHeadersVisible = false;
+            this.dgv_facturas.Size = new System.Drawing.Size(745, 310);
             this.dgv_facturas.TabIndex = 1;
             this.dgv_facturas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_facturas_CellContentClick);
             // 
@@ -813,6 +779,50 @@ namespace GoFitnessGym
             this.label5.TabIndex = 2;
             this.label5.Text = "Ver las consultas de facturas , ingresos y ventas";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(6, 13);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(767, 455);
+            this.tabControl1.TabIndex = 3;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.panel_facturas);
+            this.tabPage1.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(759, 429);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Facturas";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.panel_ventas);
+            this.tabPage2.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(759, 429);
+            this.tabPage2.TabIndex = 0;
+            this.tabPage2.Text = "Ventas";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.panel_ingresos);
+            this.tabPage3.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(759, 429);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Ingresos";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // modulo_consulta_facturas_ventas_y_ingresos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -822,10 +832,9 @@ namespace GoFitnessGym
             this.Controls.Add(this.panel_general);
             this.Controls.Add(this.label4);
             this.Name = "modulo_consulta_facturas_ventas_y_ingresos";
-            this.Text = "modulo_consulta_facturas_ventas_y_ingresos";
+            this.Text = "Consultas de Facturas Ventas Ingresos - GO Fitness";
             this.Load += new System.EventHandler(this.modulo_consulta_facturas_ventas_y_ingresos_Load);
             this.panel_general.ResumeLayout(false);
-            this.panel_general.PerformLayout();
             this.panel_ingresos.ResumeLayout(false);
             this.panel_ingresos.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -841,6 +850,10 @@ namespace GoFitnessGym
             ((System.ComponentModel.ISupportInitialize)(this.dgv_facturas)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -849,9 +862,6 @@ namespace GoFitnessGym
         #endregion
 
         private System.Windows.Forms.Panel panel_general;
-        private System.Windows.Forms.Button btn_ingresos;
-        private System.Windows.Forms.Button btn_ventas;
-        private System.Windows.Forms.Button btn_facturas;
         private System.Windows.Forms.Panel panel_facturas;
         private System.Windows.Forms.DataGridView dgv_facturas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Facturas;
@@ -913,5 +923,9 @@ namespace GoFitnessGym
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }

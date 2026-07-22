@@ -269,6 +269,12 @@
     <Compile Include="modulo_de_usuarios.Designer.cs">
       <DependentUpon>modulo_de_usuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_nuevo_gasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_nuevo_gasto.Designer.cs">
+      <DependentUpon>modulo_de_nuevo_gasto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="consulta_de_asistencia.resx">
@@ -321,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_notificaciones.resx">
       <DependentUpon>modulo_de_notificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_nuevo_gasto.resx">
+      <DependentUpon>modulo_de_nuevo_gasto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_pagos.resx">
       <DependentUpon>modulo_de_pagos.cs</DependentUpon>

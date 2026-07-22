@@ -29,10 +29,9 @@ namespace GoFitnessGym
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.lebel1 = new System.Windows.Forms.Label();
             this.lbl_desde = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@ namespace GoFitnessGym
             this.btn_exportar_gastos = new System.Windows.Forms.Button();
             this.lbl_total_gastos = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.col_gastos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +55,6 @@ namespace GoFitnessGym
             this.col_origen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_forma_pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.panel_gastos)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,6 +63,7 @@ namespace GoFitnessGym
             // lbl_titulo
             // 
             this.lbl_titulo.AutoSize = true;
+            this.lbl_titulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_titulo.Font = new System.Drawing.Font("Lexend", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_titulo.Location = new System.Drawing.Point(14, 8);
             this.lbl_titulo.Name = "lbl_titulo";
@@ -129,6 +129,7 @@ namespace GoFitnessGym
             this.lbl_origen.Size = new System.Drawing.Size(47, 17);
             this.lbl_origen.TabIndex = 6;
             this.lbl_origen.Text = "Origen:";
+            this.lbl_origen.Click += new System.EventHandler(this.lbl_origen_Click);
             // 
             // cmb_filtro_origen
             // 
@@ -148,7 +149,7 @@ namespace GoFitnessGym
             // 
             this.lbl_buscar.AutoSize = true;
             this.lbl_buscar.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_buscar.Location = new System.Drawing.Point(578, 18);
+            this.lbl_buscar.Location = new System.Drawing.Point(568, 18);
             this.lbl_buscar.Name = "lbl_buscar";
             this.lbl_buscar.Size = new System.Drawing.Size(47, 17);
             this.lbl_buscar.TabIndex = 8;
@@ -158,9 +159,9 @@ namespace GoFitnessGym
             // 
             this.txt_buscar_gasto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_buscar_gasto.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_buscar_gasto.Location = new System.Drawing.Point(631, 18);
+            this.txt_buscar_gasto.Location = new System.Drawing.Point(621, 18);
             this.txt_buscar_gasto.Name = "txt_buscar_gasto";
-            this.txt_buscar_gasto.Size = new System.Drawing.Size(114, 21);
+            this.txt_buscar_gasto.Size = new System.Drawing.Size(117, 21);
             this.txt_buscar_gasto.TabIndex = 9;
             // 
             // panel_gastos
@@ -179,22 +180,17 @@ namespace GoFitnessGym
             this.col_origen,
             this.col_forma_pago,
             this.col_monto});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.panel_gastos.DefaultCellStyle = dataGridViewCellStyle4;
+            this.panel_gastos.GridColor = System.Drawing.SystemColors.Control;
             this.panel_gastos.Location = new System.Drawing.Point(3, 60);
             this.panel_gastos.Name = "panel_gastos";
             this.panel_gastos.ReadOnly = true;
+            this.panel_gastos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.panel_gastos.RowHeadersVisible = false;
             this.panel_gastos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.panel_gastos.ShowCellErrors = false;
-            this.panel_gastos.Size = new System.Drawing.Size(761, 247);
+            this.panel_gastos.Size = new System.Drawing.Size(774, 260);
             this.panel_gastos.TabIndex = 10;
+            this.panel_gastos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.panel_gastos_CellContentClick);
             // 
             // btn_nuevo_gasto
             // 
@@ -227,7 +223,7 @@ namespace GoFitnessGym
             // lbl_total_gastos
             // 
             this.lbl_total_gastos.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_total_gastos.Location = new System.Drawing.Point(584, 326);
+            this.lbl_total_gastos.Location = new System.Drawing.Point(582, 333);
             this.lbl_total_gastos.Name = "lbl_total_gastos";
             this.lbl_total_gastos.Size = new System.Drawing.Size(180, 25);
             this.lbl_total_gastos.TabIndex = 13;
@@ -247,21 +243,35 @@ namespace GoFitnessGym
             this.panel1.Controls.Add(this.lbl_buscar);
             this.panel1.Location = new System.Drawing.Point(3, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(761, 49);
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel1.Size = new System.Drawing.Size(774, 49);
             this.panel1.TabIndex = 14;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.lbl_total_gastos);
+            this.panel2.Controls.Add(this.btn_exportar_gastos);
+            this.panel2.Controls.Add(this.btn_nuevo_gasto);
+            this.panel2.Controls.Add(this.panel_gastos);
+            this.panel2.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(5, 66);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(780, 367);
+            this.panel2.TabIndex = 0;
             // 
             // col_gastos
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col_gastos.DefaultCellStyle = dataGridViewCellStyle1;
-            this.col_gastos.HeaderText = "Codigo Gasto";
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.col_gastos.DefaultCellStyle = dataGridViewCellStyle7;
+            this.col_gastos.HeaderText = "Código Gasto";
             this.col_gastos.Name = "col_gastos";
             this.col_gastos.ReadOnly = true;
             // 
             // col_fecha
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col_fecha.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.col_fecha.DefaultCellStyle = dataGridViewCellStyle8;
             this.col_fecha.HeaderText = "Fecha";
             this.col_fecha.Name = "col_fecha";
             this.col_fecha.ReadOnly = true;
@@ -292,24 +302,12 @@ namespace GoFitnessGym
             // 
             // col_monto
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col_monto.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Lexend Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.col_monto.DefaultCellStyle = dataGridViewCellStyle9;
             this.col_monto.HeaderText = "Monto";
             this.col_monto.Name = "col_monto";
             this.col_monto.ReadOnly = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.lbl_total_gastos);
-            this.panel2.Controls.Add(this.btn_exportar_gastos);
-            this.panel2.Controls.Add(this.btn_nuevo_gasto);
-            this.panel2.Controls.Add(this.panel_gastos);
-            this.panel2.Location = new System.Drawing.Point(5, 66);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(780, 367);
-            this.panel2.TabIndex = 0;
             // 
             // modulo_de_gastos
             // 
@@ -348,6 +346,7 @@ namespace GoFitnessGym
         private System.Windows.Forms.Button btn_exportar_gastos;
         private System.Windows.Forms.Label lbl_total_gastos;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_gastos;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_categoria;
@@ -355,6 +354,5 @@ namespace GoFitnessGym
         private System.Windows.Forms.DataGridViewTextBoxColumn col_origen;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_forma_pago;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_monto;
-        private System.Windows.Forms.Panel panel2;
     }
 }
