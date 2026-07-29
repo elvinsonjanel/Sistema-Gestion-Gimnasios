@@ -167,6 +167,12 @@
     <Compile Include="modulo_de_gastos.Designer.cs">
       <DependentUpon>modulo_de_gastos.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_de_historial_notificaciones_automaticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_historial_notificaciones_automaticas.Designer.cs">
+      <DependentUpon>modulo_de_historial_notificaciones_automaticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="modulo_de_inventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_gastos.resx">
       <DependentUpon>modulo_de_gastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_historial_notificaciones_automaticas.resx">
+      <DependentUpon>modulo_de_historial_notificaciones_automaticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_inventario.resx">
       <DependentUpon>modulo_de_inventario.cs</DependentUpon>
