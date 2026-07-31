@@ -337,6 +337,9 @@
     <EmbeddedResource Include="modulo_de_control_de_acceso.resx">
       <DependentUpon>modulo_de_control_de_acceso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_editar_cliente.resx">
+      <DependentUpon>modulo_de_editar_cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_editar_rol.resx">
       <DependentUpon>modulo_de_editar_rol.cs</DependentUpon>
     </EmbeddedResource>
