@@ -17,212 +17,168 @@
 
         private void InitializeComponent()
         {
-            this.lbl_titulo = new System.Windows.Forms.Label();
-            this.lbl_subtitulo = new System.Windows.Forms.Label();
-            this.pnl_busqueda = new System.Windows.Forms.Panel();
-            this.lbl_buscar = new System.Windows.Forms.Label();
-            this.txt_busqueda = new System.Windows.Forms.TextBox();
-            this.lbl_filtro = new System.Windows.Forms.Label();
-            this.cbo_filtro = new System.Windows.Forms.ComboBox();
-            this.btn_buscar = new System.Windows.Forms.Button();
-            this.btn_limpiar = new System.Windows.Forms.Button();
-            this.pnl_tabla = new System.Windows.Forms.Panel();
+            this.panel_contenedor = new System.Windows.Forms.Panel();
+            this.btn_cerrar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.btn_ver_detalle = new System.Windows.Forms.Button();
+            this.btn_editar = new System.Windows.Forms.Button();
+            this.btn_nuevo = new System.Windows.Forms.Button();
+            this.lbl_total_registros = new System.Windows.Forms.Label();
             this.dgv_membresias = new System.Windows.Forms.DataGridView();
             this.col_codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_precio_regular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_precio_oferta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_fecha_inicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_fecha_fin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lbl_total_registros = new System.Windows.Forms.Label();
-            this.pnl_acciones = new System.Windows.Forms.Panel();
-            this.btn_nuevo = new System.Windows.Forms.Button();
-            this.btn_editar = new System.Windows.Forms.Button();
-            this.btn_ver_detalle = new System.Windows.Forms.Button();
-            this.btn_eliminar = new System.Windows.Forms.Button();
-            this.btn_cerrar = new System.Windows.Forms.Button();
-            this.pnl_busqueda.SuspendLayout();
-            this.pnl_tabla.SuspendLayout();
+            this.btn_limpiar = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.cmb_filtro = new System.Windows.Forms.ComboBox();
+            this.lbl_filtro = new System.Windows.Forms.Label();
+            this.txt_buscar = new System.Windows.Forms.TextBox();
+            this.lbl_buscar = new System.Windows.Forms.Label();
+            this.lbl_subtitulo = new System.Windows.Forms.Label();
+            this.lbl_titulo = new System.Windows.Forms.Label();
+            this.panel_contenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_membresias)).BeginInit();
-            this.pnl_acciones.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lbl_titulo
+            // panel_contenedor
             // 
-            this.lbl_titulo.AutoSize = true;
-            this.lbl_titulo.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold);
-            this.lbl_titulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(44)))));
-            this.lbl_titulo.Location = new System.Drawing.Point(30, 20);
-            this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(273, 31);
-            this.lbl_titulo.TabIndex = 0;
-            this.lbl_titulo.Text = "Gestionar Membresías";
+            this.panel_contenedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_contenedor.Controls.Add(this.btn_cerrar);
+            this.panel_contenedor.Controls.Add(this.btn_eliminar);
+            this.panel_contenedor.Controls.Add(this.btn_ver_detalle);
+            this.panel_contenedor.Controls.Add(this.btn_editar);
+            this.panel_contenedor.Controls.Add(this.btn_nuevo);
+            this.panel_contenedor.Controls.Add(this.lbl_total_registros);
+            this.panel_contenedor.Controls.Add(this.dgv_membresias);
+            this.panel_contenedor.Controls.Add(this.btn_limpiar);
+            this.panel_contenedor.Controls.Add(this.btn_buscar);
+            this.panel_contenedor.Controls.Add(this.cmb_filtro);
+            this.panel_contenedor.Controls.Add(this.lbl_filtro);
+            this.panel_contenedor.Controls.Add(this.txt_buscar);
+            this.panel_contenedor.Controls.Add(this.lbl_buscar);
+            this.panel_contenedor.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_contenedor.Location = new System.Drawing.Point(12, 62);
+            this.panel_contenedor.Name = "panel_contenedor";
+            this.panel_contenedor.Size = new System.Drawing.Size(742, 386);
+            this.panel_contenedor.TabIndex = 0;
             // 
-            // lbl_subtitulo
+            // btn_cerrar
             // 
-            this.lbl_subtitulo.AutoSize = true;
-            this.lbl_subtitulo.Font = new System.Drawing.Font("Lexend", 10F);
-            this.lbl_subtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
-            this.lbl_subtitulo.Location = new System.Drawing.Point(32, 52);
-            this.lbl_subtitulo.Name = "lbl_subtitulo";
-            this.lbl_subtitulo.Size = new System.Drawing.Size(425, 27);
-            this.lbl_subtitulo.TabIndex = 1;
-            this.lbl_subtitulo.Text = "Administre los planes de membresías disponibles";
+            this.btn_cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
+            this.btn_cerrar.FlatAppearance.BorderSize = 0;
+            this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cerrar.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrar.Location = new System.Drawing.Point(620, 339);
+            this.btn_cerrar.Name = "btn_cerrar";
+            this.btn_cerrar.Size = new System.Drawing.Size(100, 31);
+            this.btn_cerrar.TabIndex = 14;
+            this.btn_cerrar.Text = "Cerrar";
+            this.btn_cerrar.UseVisualStyleBackColor = false;
             // 
-            // pnl_busqueda
+            // btn_eliminar
             // 
-            this.pnl_busqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl_busqueda.BackColor = System.Drawing.Color.White;
-            this.pnl_busqueda.Controls.Add(this.lbl_buscar);
-            this.pnl_busqueda.Controls.Add(this.txt_busqueda);
-            this.pnl_busqueda.Controls.Add(this.lbl_filtro);
-            this.pnl_busqueda.Controls.Add(this.cbo_filtro);
-            this.pnl_busqueda.Controls.Add(this.btn_buscar);
-            this.pnl_busqueda.Controls.Add(this.btn_limpiar);
-            this.pnl_busqueda.Location = new System.Drawing.Point(30, 85);
-            this.pnl_busqueda.Name = "pnl_busqueda";
-            this.pnl_busqueda.Padding = new System.Windows.Forms.Padding(20);
-            this.pnl_busqueda.Size = new System.Drawing.Size(940, 75);
-            this.pnl_busqueda.TabIndex = 2;
+            this.btn_eliminar.BackColor = System.Drawing.Color.Firebrick;
+            this.btn_eliminar.FlatAppearance.BorderSize = 0;
+            this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_eliminar.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar.ForeColor = System.Drawing.Color.White;
+            this.btn_eliminar.Location = new System.Drawing.Point(326, 339);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(100, 31);
+            this.btn_eliminar.TabIndex = 13;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = false;
             // 
-            // lbl_buscar
+            // btn_ver_detalle
             // 
-            this.lbl_buscar.AutoSize = true;
-            this.lbl_buscar.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold);
-            this.lbl_buscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lbl_buscar.Location = new System.Drawing.Point(20, 20);
-            this.lbl_buscar.Name = "lbl_buscar";
-            this.lbl_buscar.Size = new System.Drawing.Size(67, 24);
-            this.lbl_buscar.TabIndex = 0;
-            this.lbl_buscar.Text = "Buscar:";
+            this.btn_ver_detalle.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_ver_detalle.FlatAppearance.BorderSize = 0;
+            this.btn_ver_detalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ver_detalle.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ver_detalle.ForeColor = System.Drawing.Color.White;
+            this.btn_ver_detalle.Location = new System.Drawing.Point(220, 339);
+            this.btn_ver_detalle.Name = "btn_ver_detalle";
+            this.btn_ver_detalle.Size = new System.Drawing.Size(100, 31);
+            this.btn_ver_detalle.TabIndex = 12;
+            this.btn_ver_detalle.Text = "Ver Detalle";
+            this.btn_ver_detalle.UseVisualStyleBackColor = false;
             // 
-            // txt_busqueda
+            // btn_editar
             // 
-            this.txt_busqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_busqueda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_busqueda.Font = new System.Drawing.Font("Lexend", 10F);
-            this.txt_busqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.txt_busqueda.Location = new System.Drawing.Point(120, 17);
-            this.txt_busqueda.Name = "txt_busqueda";
-            this.txt_busqueda.Size = new System.Drawing.Size(265, 28);
-            this.txt_busqueda.TabIndex = 1;
+            this.btn_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
+            this.btn_editar.FlatAppearance.BorderSize = 0;
+            this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_editar.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editar.ForeColor = System.Drawing.Color.White;
+            this.btn_editar.Location = new System.Drawing.Point(114, 339);
+            this.btn_editar.Name = "btn_editar";
+            this.btn_editar.Size = new System.Drawing.Size(100, 31);
+            this.btn_editar.TabIndex = 11;
+            this.btn_editar.Text = "Editar";
+            this.btn_editar.UseVisualStyleBackColor = false;
             // 
-            // lbl_filtro
+            // btn_nuevo
             // 
-            this.lbl_filtro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_filtro.AutoSize = true;
-            this.lbl_filtro.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold);
-            this.lbl_filtro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lbl_filtro.Location = new System.Drawing.Point(405, 20);
-            this.lbl_filtro.Name = "lbl_filtro";
-            this.lbl_filtro.Size = new System.Drawing.Size(56, 24);
-            this.lbl_filtro.TabIndex = 2;
-            this.lbl_filtro.Text = "Filtro:";
+            this.btn_nuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
+            this.btn_nuevo.FlatAppearance.BorderSize = 0;
+            this.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_nuevo.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nuevo.ForeColor = System.Drawing.Color.White;
+            this.btn_nuevo.Location = new System.Drawing.Point(8, 337);
+            this.btn_nuevo.Name = "btn_nuevo";
+            this.btn_nuevo.Size = new System.Drawing.Size(100, 31);
+            this.btn_nuevo.TabIndex = 10;
+            this.btn_nuevo.Text = "Nuevo";
+            this.btn_nuevo.UseVisualStyleBackColor = false;
             // 
-            // cbo_filtro
+            // lbl_total_registros
             // 
-            this.cbo_filtro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbo_filtro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbo_filtro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbo_filtro.Font = new System.Drawing.Font("Lexend", 10F);
-            this.cbo_filtro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.cbo_filtro.FormattingEnabled = true;
-            this.cbo_filtro.Items.AddRange(new object[] {
-            "Todos",
-            "Código",
-            "Nombre",
-            "Descripción",
-            "Duración",
-            "Precio",
-            "Estado"});
-            this.cbo_filtro.Location = new System.Drawing.Point(460, 16);
-            this.cbo_filtro.Name = "cbo_filtro";
-            this.cbo_filtro.Size = new System.Drawing.Size(180, 35);
-            this.cbo_filtro.TabIndex = 3;
-            // 
-            // btn_buscar
-            // 
-            this.btn_buscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
-            this.btn_buscar.FlatAppearance.BorderSize = 0;
-            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_buscar.ForeColor = System.Drawing.Color.White;
-            this.btn_buscar.Location = new System.Drawing.Point(660, 14);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(110, 32);
-            this.btn_buscar.TabIndex = 4;
-            this.btn_buscar.Text = "Buscar";
-            this.btn_buscar.UseVisualStyleBackColor = false;
-            // 
-            // btn_limpiar
-            // 
-            this.btn_limpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
-            this.btn_limpiar.FlatAppearance.BorderSize = 0;
-            this.btn_limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_limpiar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_limpiar.ForeColor = System.Drawing.Color.White;
-            this.btn_limpiar.Location = new System.Drawing.Point(780, 14);
-            this.btn_limpiar.Name = "btn_limpiar";
-            this.btn_limpiar.Size = new System.Drawing.Size(110, 32);
-            this.btn_limpiar.TabIndex = 5;
-            this.btn_limpiar.Text = "Limpiar";
-            this.btn_limpiar.UseVisualStyleBackColor = false;
-            // 
-            // pnl_tabla
-            // 
-            this.pnl_tabla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl_tabla.BackColor = System.Drawing.Color.White;
-            this.pnl_tabla.Controls.Add(this.dgv_membresias);
-            this.pnl_tabla.Controls.Add(this.lbl_total_registros);
-            this.pnl_tabla.Location = new System.Drawing.Point(30, 170);
-            this.pnl_tabla.Name = "pnl_tabla";
-            this.pnl_tabla.Padding = new System.Windows.Forms.Padding(15);
-            this.pnl_tabla.Size = new System.Drawing.Size(940, 370);
-            this.pnl_tabla.TabIndex = 3;
+            this.lbl_total_registros.AutoSize = true;
+            this.lbl_total_registros.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total_registros.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_total_registros.Location = new System.Drawing.Point(5, 317);
+            this.lbl_total_registros.Name = "lbl_total_registros";
+            this.lbl_total_registros.Size = new System.Drawing.Size(111, 17);
+            this.lbl_total_registros.TabIndex = 9;
+            this.lbl_total_registros.Text = "Total de registros: 0";
             // 
             // dgv_membresias
             // 
             this.dgv_membresias.AllowUserToAddRows = false;
             this.dgv_membresias.AllowUserToDeleteRows = false;
-            this.dgv_membresias.AllowUserToResizeRows = false;
             this.dgv_membresias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_membresias.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_membresias.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_membresias.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_membresias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_membresias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_membresias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_membresias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_codigo,
             this.col_nombre,
-            this.col_descripcion,
+            this.col_tipo,
             this.col_duracion,
-            this.col_precio,
+            this.col_precio_regular,
+            this.col_precio_oferta,
+            this.col_fecha_inicio,
+            this.col_fecha_fin,
             this.col_estado});
-            this.dgv_membresias.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_membresias.EnableHeadersVisualStyles = false;
-            this.dgv_membresias.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
-            this.dgv_membresias.Location = new System.Drawing.Point(15, 15);
-            this.dgv_membresias.MultiSelect = false;
+            this.dgv_membresias.Location = new System.Drawing.Point(2, 66);
             this.dgv_membresias.Name = "dgv_membresias";
             this.dgv_membresias.ReadOnly = true;
             this.dgv_membresias.RowHeadersVisible = false;
-            this.dgv_membresias.RowHeadersWidth = 51;
-            this.dgv_membresias.RowTemplate.Height = 35;
             this.dgv_membresias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_membresias.Size = new System.Drawing.Size(910, 310);
-            this.dgv_membresias.TabIndex = 0;
+            this.dgv_membresias.Size = new System.Drawing.Size(735, 248);
+            this.dgv_membresias.TabIndex = 8;
             // 
             // col_codigo
             // 
-            this.col_codigo.FillWeight = 60F;
+            this.col_codigo.FillWeight = 65F;
             this.col_codigo.HeaderText = "Código";
-            this.col_codigo.MinimumWidth = 6;
             this.col_codigo.Name = "col_codigo";
             this.col_codigo.ReadOnly = true;
             // 
@@ -230,161 +186,167 @@
             // 
             this.col_nombre.FillWeight = 120F;
             this.col_nombre.HeaderText = "Nombre";
-            this.col_nombre.MinimumWidth = 6;
             this.col_nombre.Name = "col_nombre";
             this.col_nombre.ReadOnly = true;
             // 
-            // col_descripcion
+            // col_tipo
             // 
-            this.col_descripcion.FillWeight = 160F;
-            this.col_descripcion.HeaderText = "Descripción";
-            this.col_descripcion.MinimumWidth = 6;
-            this.col_descripcion.Name = "col_descripcion";
-            this.col_descripcion.ReadOnly = true;
+            this.col_tipo.FillWeight = 60F;
+            this.col_tipo.HeaderText = "Tipo";
+            this.col_tipo.Name = "col_tipo";
+            this.col_tipo.ReadOnly = true;
             // 
             // col_duracion
             // 
-            this.col_duracion.FillWeight = 90F;
+            this.col_duracion.FillWeight = 65F;
             this.col_duracion.HeaderText = "Duración";
-            this.col_duracion.MinimumWidth = 6;
             this.col_duracion.Name = "col_duracion";
             this.col_duracion.ReadOnly = true;
             // 
-            // col_precio
+            // col_precio_regular
             // 
-            this.col_precio.FillWeight = 90F;
-            this.col_precio.HeaderText = "Precio";
-            this.col_precio.MinimumWidth = 6;
-            this.col_precio.Name = "col_precio";
-            this.col_precio.ReadOnly = true;
+            this.col_precio_regular.FillWeight = 80F;
+            this.col_precio_regular.HeaderText = "Precio Reg.";
+            this.col_precio_regular.Name = "col_precio_regular";
+            this.col_precio_regular.ReadOnly = true;
+            // 
+            // col_precio_oferta
+            // 
+            this.col_precio_oferta.FillWeight = 80F;
+            this.col_precio_oferta.HeaderText = "Precio Ofe.";
+            this.col_precio_oferta.Name = "col_precio_oferta";
+            this.col_precio_oferta.ReadOnly = true;
+            // 
+            // col_fecha_inicio
+            // 
+            this.col_fecha_inicio.FillWeight = 75F;
+            this.col_fecha_inicio.HeaderText = "Inicio Ofe.";
+            this.col_fecha_inicio.Name = "col_fecha_inicio";
+            this.col_fecha_inicio.ReadOnly = true;
+            // 
+            // col_fecha_fin
+            // 
+            this.col_fecha_fin.FillWeight = 75F;
+            this.col_fecha_fin.HeaderText = "Fin Ofe.";
+            this.col_fecha_fin.Name = "col_fecha_fin";
+            this.col_fecha_fin.ReadOnly = true;
             // 
             // col_estado
             // 
-            this.col_estado.FillWeight = 90F;
+            this.col_estado.FillWeight = 65F;
             this.col_estado.HeaderText = "Estado";
-            this.col_estado.MinimumWidth = 6;
             this.col_estado.Name = "col_estado";
             this.col_estado.ReadOnly = true;
             // 
-            // lbl_total_registros
+            // btn_limpiar
             // 
-            this.lbl_total_registros.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbl_total_registros.Font = new System.Drawing.Font("Lexend", 9F);
-            this.lbl_total_registros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
-            this.lbl_total_registros.Location = new System.Drawing.Point(15, 325);
-            this.lbl_total_registros.Name = "lbl_total_registros";
-            this.lbl_total_registros.Size = new System.Drawing.Size(910, 30);
-            this.lbl_total_registros.TabIndex = 1;
-            this.lbl_total_registros.Text = "Total de registros: 0";
-            this.lbl_total_registros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
+            this.btn_limpiar.FlatAppearance.BorderSize = 0;
+            this.btn_limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_limpiar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar.ForeColor = System.Drawing.Color.White;
+            this.btn_limpiar.Location = new System.Drawing.Point(630, 17);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(90, 26);
+            this.btn_limpiar.TabIndex = 7;
+            this.btn_limpiar.Text = "Limpiar";
+            this.btn_limpiar.UseVisualStyleBackColor = false;
             // 
-            // pnl_acciones
+            // btn_buscar
             // 
-            this.pnl_acciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl_acciones.BackColor = System.Drawing.Color.White;
-            this.pnl_acciones.Controls.Add(this.btn_nuevo);
-            this.pnl_acciones.Controls.Add(this.btn_editar);
-            this.pnl_acciones.Controls.Add(this.btn_ver_detalle);
-            this.pnl_acciones.Controls.Add(this.btn_eliminar);
-            this.pnl_acciones.Controls.Add(this.btn_cerrar);
-            this.pnl_acciones.Location = new System.Drawing.Point(30, 555);
-            this.pnl_acciones.Name = "pnl_acciones";
-            this.pnl_acciones.Padding = new System.Windows.Forms.Padding(15);
-            this.pnl_acciones.Size = new System.Drawing.Size(940, 70);
-            this.pnl_acciones.TabIndex = 4;
+            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
+            this.btn_buscar.FlatAppearance.BorderSize = 0;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar.ForeColor = System.Drawing.Color.White;
+            this.btn_buscar.Location = new System.Drawing.Point(530, 17);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(90, 26);
+            this.btn_buscar.TabIndex = 6;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = false;
             // 
-            // btn_nuevo
+            // cmb_filtro
             // 
-            this.btn_nuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
-            this.btn_nuevo.FlatAppearance.BorderSize = 0;
-            this.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_nuevo.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_nuevo.ForeColor = System.Drawing.Color.White;
-            this.btn_nuevo.Location = new System.Drawing.Point(20, 15);
-            this.btn_nuevo.Name = "btn_nuevo";
-            this.btn_nuevo.Size = new System.Drawing.Size(130, 40);
-            this.btn_nuevo.TabIndex = 0;
-            this.btn_nuevo.Text = "Nuevo";
-            this.btn_nuevo.UseVisualStyleBackColor = false;
+            this.cmb_filtro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_filtro.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_filtro.FormattingEnabled = true;
+            this.cmb_filtro.Items.AddRange(new object[] {
+            "Todos",
+            "Membresías Regulares",
+            "Ofertas Temporales",
+            "Activos",
+            "Vencidos"});
+            this.cmb_filtro.Location = new System.Drawing.Point(355, 19);
+            this.cmb_filtro.Name = "cmb_filtro";
+            this.cmb_filtro.Size = new System.Drawing.Size(160, 23);
+            this.cmb_filtro.TabIndex = 5;
             // 
-            // btn_editar
+            // lbl_filtro
             // 
-            this.btn_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
-            this.btn_editar.FlatAppearance.BorderSize = 0;
-            this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_editar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_editar.ForeColor = System.Drawing.Color.White;
-            this.btn_editar.Location = new System.Drawing.Point(160, 15);
-            this.btn_editar.Name = "btn_editar";
-            this.btn_editar.Size = new System.Drawing.Size(130, 40);
-            this.btn_editar.TabIndex = 1;
-            this.btn_editar.Text = "Editar";
-            this.btn_editar.UseVisualStyleBackColor = false;
+            this.lbl_filtro.AutoSize = true;
+            this.lbl_filtro.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_filtro.Location = new System.Drawing.Point(310, 23);
+            this.lbl_filtro.Name = "lbl_filtro";
+            this.lbl_filtro.Size = new System.Drawing.Size(39, 15);
+            this.lbl_filtro.TabIndex = 4;
+            this.lbl_filtro.Text = "Filtro:";
             // 
-            // btn_ver_detalle
+            // txt_buscar
             // 
-            this.btn_ver_detalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
-            this.btn_ver_detalle.FlatAppearance.BorderSize = 0;
-            this.btn_ver_detalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ver_detalle.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_ver_detalle.ForeColor = System.Drawing.Color.White;
-            this.btn_ver_detalle.Location = new System.Drawing.Point(300, 15);
-            this.btn_ver_detalle.Name = "btn_ver_detalle";
-            this.btn_ver_detalle.Size = new System.Drawing.Size(140, 40);
-            this.btn_ver_detalle.TabIndex = 2;
-            this.btn_ver_detalle.Text = "Ver Detalle";
-            this.btn_ver_detalle.UseVisualStyleBackColor = false;
+            this.txt_buscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_buscar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_buscar.Location = new System.Drawing.Point(70, 19);
+            this.txt_buscar.Name = "txt_buscar";
+            this.txt_buscar.Size = new System.Drawing.Size(220, 23);
+            this.txt_buscar.TabIndex = 3;
             // 
-            // btn_eliminar
+            // lbl_buscar
             // 
-            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btn_eliminar.FlatAppearance.BorderSize = 0;
-            this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_eliminar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_eliminar.ForeColor = System.Drawing.Color.White;
-            this.btn_eliminar.Location = new System.Drawing.Point(450, 15);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(130, 40);
-            this.btn_eliminar.TabIndex = 3;
-            this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.UseVisualStyleBackColor = false;
+            this.lbl_buscar.AutoSize = true;
+            this.lbl_buscar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_buscar.Location = new System.Drawing.Point(16, 22);
+            this.lbl_buscar.Name = "lbl_buscar";
+            this.lbl_buscar.Size = new System.Drawing.Size(47, 15);
+            this.lbl_buscar.TabIndex = 2;
+            this.lbl_buscar.Text = "Buscar:";
             // 
-            // btn_cerrar
+            // lbl_subtitulo
             // 
-            this.btn_cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
-            this.btn_cerrar.FlatAppearance.BorderSize = 0;
-            this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cerrar.Font = new System.Drawing.Font("Lexend", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_cerrar.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrar.Location = new System.Drawing.Point(790, 15);
-            this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(130, 40);
-            this.btn_cerrar.TabIndex = 4;
-            this.btn_cerrar.Text = "Cerrar";
-            this.btn_cerrar.UseVisualStyleBackColor = false;
+            this.lbl_subtitulo.AutoSize = true;
+            this.lbl_subtitulo.Font = new System.Drawing.Font("Lexend Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_subtitulo.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_subtitulo.Location = new System.Drawing.Point(12, 42);
+            this.lbl_subtitulo.Name = "lbl_subtitulo";
+            this.lbl_subtitulo.Size = new System.Drawing.Size(312, 17);
+            this.lbl_subtitulo.TabIndex = 1;
+            this.lbl_subtitulo.Text = "Administre los planes regulares y las ofertas promocionales";
+            // 
+            // lbl_titulo
+            // 
+            this.lbl_titulo.AutoSize = true;
+            this.lbl_titulo.Font = new System.Drawing.Font("Lexend", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_titulo.Location = new System.Drawing.Point(7, 9);
+            this.lbl_titulo.Name = "lbl_titulo";
+            this.lbl_titulo.Size = new System.Drawing.Size(357, 33);
+            this.lbl_titulo.TabIndex = 0;
+            this.lbl_titulo.Text = "Gestionar Membresías y Ofertas";
             // 
             // modulo_de_membresias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1000, 650);
-            this.Controls.Add(this.pnl_acciones);
-            this.Controls.Add(this.pnl_tabla);
-            this.Controls.Add(this.pnl_busqueda);
-            this.Controls.Add(this.lbl_subtitulo);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(766, 460);
+            this.Controls.Add(this.panel_contenedor);
             this.Controls.Add(this.lbl_titulo);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.lbl_subtitulo);
             this.Name = "modulo_de_membresias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gestionar Membresías - Go Fitness";
-            this.pnl_busqueda.ResumeLayout(false);
-            this.pnl_busqueda.PerformLayout();
-            this.pnl_tabla.ResumeLayout(false);
+            this.Text = "Gestionar Membresías y Ofertas";
+            this.panel_contenedor.ResumeLayout(false);
+            this.panel_contenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_membresias)).EndInit();
-            this.pnl_acciones.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,25 +354,26 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel panel_contenedor;
         private System.Windows.Forms.Label lbl_titulo;
         private System.Windows.Forms.Label lbl_subtitulo;
-        private System.Windows.Forms.Panel pnl_busqueda;
         private System.Windows.Forms.Label lbl_buscar;
-        private System.Windows.Forms.TextBox txt_busqueda;
+        private System.Windows.Forms.TextBox txt_buscar;
         private System.Windows.Forms.Label lbl_filtro;
-        private System.Windows.Forms.ComboBox cbo_filtro;
+        private System.Windows.Forms.ComboBox cmb_filtro;
         private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.Button btn_limpiar;
-        private System.Windows.Forms.Panel pnl_tabla;
         private System.Windows.Forms.DataGridView dgv_membresias;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_duracion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_precio_regular;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_precio_oferta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_fecha_inicio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_fecha_fin;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_estado;
         private System.Windows.Forms.Label lbl_total_registros;
-        private System.Windows.Forms.Panel pnl_acciones;
         private System.Windows.Forms.Button btn_nuevo;
         private System.Windows.Forms.Button btn_editar;
         private System.Windows.Forms.Button btn_ver_detalle;
