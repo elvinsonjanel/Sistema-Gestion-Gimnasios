@@ -1,6 +1,6 @@
 ﻿namespace GoFitnessGym
 {
-    partial class modulo_de_membresias
+    partial class modulo_de_membresias_ofertas
     {
         private System.ComponentModel.IContainer components = null;
 

@@ -301,9 +301,9 @@
             this.lbl_titulo.Font = new System.Drawing.Font("Lexend Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_titulo.Location = new System.Drawing.Point(12, 9);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(287, 33);
+            this.lbl_titulo.Size = new System.Drawing.Size(353, 33);
             this.lbl_titulo.TabIndex = 0;
-            this.lbl_titulo.Text = "Gestión de Plan u Oferta";
+            this.lbl_titulo.Text = "Datos De Membresias u Oferta";
             // 
             // modulo_de_registrar_membresias
             // 

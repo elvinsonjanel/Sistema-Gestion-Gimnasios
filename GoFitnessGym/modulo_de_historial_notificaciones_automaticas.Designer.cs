@@ -41,6 +41,8 @@ namespace GoFitnessGym
             this.lbl_desde = new System.Windows.Forms.Label();
             this.lbl_subtitulo = new System.Windows.Forms.Label();
             this.lbl_titulo = new System.Windows.Forms.Label();
+            this.btn_limpiar = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
             this.panel_contenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_auditoria)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +50,8 @@ namespace GoFitnessGym
             // panel_contenedor
             // 
             this.panel_contenedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_contenedor.Controls.Add(this.btn_limpiar);
+            this.panel_contenedor.Controls.Add(this.btn_buscar);
             this.panel_contenedor.Controls.Add(this.lbl_total_notificaciones);
             this.panel_contenedor.Controls.Add(this.btn_ver_detalle);
             this.panel_contenedor.Controls.Add(this.btn_exportar);
@@ -180,16 +184,16 @@ namespace GoFitnessGym
             // 
             this.txt_buscar_cliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_buscar_cliente.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_buscar_cliente.Location = new System.Drawing.Point(605, 26);
+            this.txt_buscar_cliente.Location = new System.Drawing.Point(534, 24);
             this.txt_buscar_cliente.Name = "txt_buscar_cliente";
-            this.txt_buscar_cliente.Size = new System.Drawing.Size(161, 22);
+            this.txt_buscar_cliente.Size = new System.Drawing.Size(115, 22);
             this.txt_buscar_cliente.TabIndex = 9;
             // 
             // lbl_buscar
             // 
             this.lbl_buscar.AutoSize = true;
             this.lbl_buscar.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_buscar.Location = new System.Drawing.Point(547, 26);
+            this.lbl_buscar.Location = new System.Drawing.Point(486, 24);
             this.lbl_buscar.Name = "lbl_buscar";
             this.lbl_buscar.Size = new System.Drawing.Size(52, 19);
             this.lbl_buscar.TabIndex = 8;
@@ -204,16 +208,16 @@ namespace GoFitnessGym
             "Todos",
             "Vencimiento Membresía",
             "Recordatorio Deuda"});
-            this.cmb_tipo_aviso.Location = new System.Drawing.Point(373, 22);
+            this.cmb_tipo_aviso.Location = new System.Drawing.Point(356, 22);
             this.cmb_tipo_aviso.Name = "cmb_tipo_aviso";
-            this.cmb_tipo_aviso.Size = new System.Drawing.Size(160, 27);
+            this.cmb_tipo_aviso.Size = new System.Drawing.Size(126, 27);
             this.cmb_tipo_aviso.TabIndex = 7;
             // 
             // lbl_tipo_aviso
             // 
             this.lbl_tipo_aviso.AutoSize = true;
             this.lbl_tipo_aviso.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tipo_aviso.Location = new System.Drawing.Point(330, 27);
+            this.lbl_tipo_aviso.Location = new System.Drawing.Point(319, 26);
             this.lbl_tipo_aviso.Name = "lbl_tipo_aviso";
             this.lbl_tipo_aviso.Size = new System.Drawing.Size(37, 19);
             this.lbl_tipo_aviso.TabIndex = 6;
@@ -223,7 +227,7 @@ namespace GoFitnessGym
             // 
             this.dtp_fecha_fin.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_fecha_fin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fecha_fin.Location = new System.Drawing.Point(224, 25);
+            this.dtp_fecha_fin.Location = new System.Drawing.Point(213, 24);
             this.dtp_fecha_fin.Name = "dtp_fecha_fin";
             this.dtp_fecha_fin.Size = new System.Drawing.Size(100, 22);
             this.dtp_fecha_fin.TabIndex = 5;
@@ -232,7 +236,7 @@ namespace GoFitnessGym
             // 
             this.lbl_hasta.AutoSize = true;
             this.lbl_hasta.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hasta.Location = new System.Drawing.Point(170, 26);
+            this.lbl_hasta.Location = new System.Drawing.Point(159, 27);
             this.lbl_hasta.Name = "lbl_hasta";
             this.lbl_hasta.Size = new System.Drawing.Size(48, 19);
             this.lbl_hasta.TabIndex = 4;
@@ -242,7 +246,7 @@ namespace GoFitnessGym
             // 
             this.dtp_fecha_inicio.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_fecha_inicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fecha_inicio.Location = new System.Drawing.Point(64, 24);
+            this.dtp_fecha_inicio.Location = new System.Drawing.Point(53, 24);
             this.dtp_fecha_inicio.Name = "dtp_fecha_inicio";
             this.dtp_fecha_inicio.Size = new System.Drawing.Size(100, 22);
             this.dtp_fecha_inicio.TabIndex = 3;
@@ -262,7 +266,7 @@ namespace GoFitnessGym
             this.lbl_subtitulo.AutoSize = true;
             this.lbl_subtitulo.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_subtitulo.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_subtitulo.Location = new System.Drawing.Point(9, 42);
+            this.lbl_subtitulo.Location = new System.Drawing.Point(12, 42);
             this.lbl_subtitulo.Name = "lbl_subtitulo";
             this.lbl_subtitulo.Size = new System.Drawing.Size(296, 19);
             this.lbl_subtitulo.TabIndex = 1;
@@ -272,11 +276,39 @@ namespace GoFitnessGym
             // 
             this.lbl_titulo.AutoSize = true;
             this.lbl_titulo.Font = new System.Drawing.Font("Lexend", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_titulo.Location = new System.Drawing.Point(7, 9);
+            this.lbl_titulo.Location = new System.Drawing.Point(10, 9);
             this.lbl_titulo.Name = "lbl_titulo";
             this.lbl_titulo.Size = new System.Drawing.Size(437, 33);
             this.lbl_titulo.TabIndex = 0;
             this.lbl_titulo.Text = "Historial de Notificaciones Automáticas";
+            // 
+            // btn_limpiar
+            // 
+            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(128)))), ((int)(((byte)(150)))));
+            this.btn_limpiar.FlatAppearance.BorderSize = 0;
+            this.btn_limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_limpiar.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar.ForeColor = System.Drawing.Color.White;
+            this.btn_limpiar.Location = new System.Drawing.Point(716, 23);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(55, 25);
+            this.btn_limpiar.TabIndex = 15;
+            this.btn_limpiar.Text = "Limpiar";
+            this.btn_limpiar.UseVisualStyleBackColor = false;
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(139)))));
+            this.btn_buscar.FlatAppearance.BorderSize = 0;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Font = new System.Drawing.Font("Lexend", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar.ForeColor = System.Drawing.Color.White;
+            this.btn_buscar.Location = new System.Drawing.Point(655, 23);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(55, 25);
+            this.btn_buscar.TabIndex = 14;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = false;
             // 
             // modulo_de_historial_notificaciones_automaticas
             // 
@@ -328,5 +360,7 @@ namespace GoFitnessGym
         private System.Windows.Forms.Button btn_exportar;
         private System.Windows.Forms.Button btn_ver_detalle;
         private System.Windows.Forms.Label lbl_total_notificaciones;
+        private System.Windows.Forms.Button btn_limpiar;
+        private System.Windows.Forms.Button btn_buscar;
     }
 }
