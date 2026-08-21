@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace GoFitnessGym
 {
-    public partial class modulo_de_registrar_clientes : Form
+    public partial class modulo_de_registrar_gastos_operativo : Form
     {
-        public modulo_de_registrar_clientes()
+        public modulo_de_registrar_gastos_operativo()
         {
             InitializeComponent();
         }
-
     }
 }

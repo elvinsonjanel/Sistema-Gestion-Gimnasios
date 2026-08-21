@@ -48,6 +48,8 @@ namespace GoFitnessGym
             this.pnl_acciones = new System.Windows.Forms.Panel();
             this.btn_imprimir = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_tipo_documento = new System.Windows.Forms.TextBox();
             this.pnl_datos_personales.SuspendLayout();
             this.pnl_acceso_y_rol.SuspendLayout();
             this.pnl_acciones.SuspendLayout();
@@ -80,6 +82,8 @@ namespace GoFitnessGym
             this.pnl_datos_personales.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_datos_personales.BackColor = System.Drawing.Color.White;
+            this.pnl_datos_personales.Controls.Add(this.txt_tipo_documento);
+            this.pnl_datos_personales.Controls.Add(this.label1);
             this.pnl_datos_personales.Controls.Add(this.lbl_datos_personales);
             this.pnl_datos_personales.Controls.Add(this.lbl_codigo_usuario);
             this.pnl_datos_personales.Controls.Add(this.txt_codigo_usuario);
@@ -96,7 +100,7 @@ namespace GoFitnessGym
             this.pnl_datos_personales.Location = new System.Drawing.Point(30, 103);
             this.pnl_datos_personales.Name = "pnl_datos_personales";
             this.pnl_datos_personales.Padding = new System.Windows.Forms.Padding(20);
-            this.pnl_datos_personales.Size = new System.Drawing.Size(839, 236);
+            this.pnl_datos_personales.Size = new System.Drawing.Size(839, 277);
             this.pnl_datos_personales.TabIndex = 2;
             // 
             // lbl_datos_personales
@@ -184,7 +188,7 @@ namespace GoFitnessGym
             this.lbl_documento_identidad.AutoSize = true;
             this.lbl_documento_identidad.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_documento_identidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lbl_documento_identidad.Location = new System.Drawing.Point(20, 130);
+            this.lbl_documento_identidad.Location = new System.Drawing.Point(298, 139);
             this.lbl_documento_identidad.Name = "lbl_documento_identidad";
             this.lbl_documento_identidad.Size = new System.Drawing.Size(207, 24);
             this.lbl_documento_identidad.TabIndex = 7;
@@ -196,7 +200,7 @@ namespace GoFitnessGym
             this.txt_documento_identidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_documento_identidad.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_documento_identidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.txt_documento_identidad.Location = new System.Drawing.Point(20, 157);
+            this.txt_documento_identidad.Location = new System.Drawing.Point(298, 166);
             this.txt_documento_identidad.Name = "txt_documento_identidad";
             this.txt_documento_identidad.ReadOnly = true;
             this.txt_documento_identidad.Size = new System.Drawing.Size(245, 28);
@@ -207,7 +211,7 @@ namespace GoFitnessGym
             this.lbl_telefono.AutoSize = true;
             this.lbl_telefono.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lbl_telefono.Location = new System.Drawing.Point(298, 130);
+            this.lbl_telefono.Location = new System.Drawing.Point(572, 139);
             this.lbl_telefono.Name = "lbl_telefono";
             this.lbl_telefono.Size = new System.Drawing.Size(82, 24);
             this.lbl_telefono.TabIndex = 9;
@@ -219,7 +223,7 @@ namespace GoFitnessGym
             this.txt_telefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_telefono.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.txt_telefono.Location = new System.Drawing.Point(298, 157);
+            this.txt_telefono.Location = new System.Drawing.Point(572, 166);
             this.txt_telefono.Name = "txt_telefono";
             this.txt_telefono.ReadOnly = true;
             this.txt_telefono.Size = new System.Drawing.Size(245, 28);
@@ -230,7 +234,7 @@ namespace GoFitnessGym
             this.lbl_correo_electronico.AutoSize = true;
             this.lbl_correo_electronico.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_correo_electronico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lbl_correo_electronico.Location = new System.Drawing.Point(576, 130);
+            this.lbl_correo_electronico.Location = new System.Drawing.Point(20, 205);
             this.lbl_correo_electronico.Name = "lbl_correo_electronico";
             this.lbl_correo_electronico.Size = new System.Drawing.Size(159, 24);
             this.lbl_correo_electronico.TabIndex = 11;
@@ -242,7 +246,7 @@ namespace GoFitnessGym
             this.txt_correo_electronico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_correo_electronico.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_correo_electronico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.txt_correo_electronico.Location = new System.Drawing.Point(576, 157);
+            this.txt_correo_electronico.Location = new System.Drawing.Point(20, 232);
             this.txt_correo_electronico.Name = "txt_correo_electronico";
             this.txt_correo_electronico.ReadOnly = true;
             this.txt_correo_electronico.Size = new System.Drawing.Size(245, 28);
@@ -262,7 +266,7 @@ namespace GoFitnessGym
             this.pnl_acceso_y_rol.Controls.Add(this.txt_estado);
             this.pnl_acceso_y_rol.Controls.Add(this.lbl_ultimo_acceso);
             this.pnl_acceso_y_rol.Controls.Add(this.txt_ultimo_acceso);
-            this.pnl_acceso_y_rol.Location = new System.Drawing.Point(30, 369);
+            this.pnl_acceso_y_rol.Location = new System.Drawing.Point(30, 402);
             this.pnl_acceso_y_rol.Name = "pnl_acceso_y_rol";
             this.pnl_acceso_y_rol.Padding = new System.Windows.Forms.Padding(20);
             this.pnl_acceso_y_rol.Size = new System.Drawing.Size(839, 214);
@@ -379,7 +383,7 @@ namespace GoFitnessGym
             this.pnl_acciones.BackColor = System.Drawing.Color.White;
             this.pnl_acciones.Controls.Add(this.btn_imprimir);
             this.pnl_acciones.Controls.Add(this.btn_cerrar);
-            this.pnl_acciones.Location = new System.Drawing.Point(30, 595);
+            this.pnl_acciones.Location = new System.Drawing.Point(30, 639);
             this.pnl_acciones.Name = "pnl_acciones";
             this.pnl_acciones.Padding = new System.Windows.Forms.Padding(15);
             this.pnl_acciones.Size = new System.Drawing.Size(839, 70);
@@ -414,12 +418,35 @@ namespace GoFitnessGym
             this.btn_cerrar.Text = "Cerrar";
             this.btn_cerrar.UseVisualStyleBackColor = false;
             // 
-            // detalle_de_cliente
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lexend", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
+            this.label1.Location = new System.Drawing.Point(20, 139);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 24);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Tipo de Documento:";
+            // 
+            // txt_tipo_documento
+            // 
+            this.txt_tipo_documento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.txt_tipo_documento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_tipo_documento.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tipo_documento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
+            this.txt_tipo_documento.Location = new System.Drawing.Point(20, 166);
+            this.txt_tipo_documento.Name = "txt_tipo_documento";
+            this.txt_tipo_documento.ReadOnly = true;
+            this.txt_tipo_documento.Size = new System.Drawing.Size(245, 28);
+            this.txt_tipo_documento.TabIndex = 14;
+            // 
+            // detalle_de_usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(899, 720);
+            this.ClientSize = new System.Drawing.Size(899, 764);
             this.Controls.Add(this.pnl_acciones);
             this.Controls.Add(this.pnl_acceso_y_rol);
             this.Controls.Add(this.pnl_datos_personales);
@@ -428,7 +455,7 @@ namespace GoFitnessGym
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "detalle_de_cliente";
+            this.Name = "detalle_de_usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Detalle del Usuario - Go Fitness Gym";
             this.pnl_datos_personales.ResumeLayout(false);
@@ -529,5 +556,7 @@ namespace GoFitnessGym
 
         private System.Windows.Forms.Button
             btn_cerrar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_tipo_documento;
     }
 }

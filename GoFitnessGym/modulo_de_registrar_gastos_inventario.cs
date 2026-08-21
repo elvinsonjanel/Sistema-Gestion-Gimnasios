@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace GoFitnessGym
 {
-    public partial class modulo_de_gastos : Form
+    public partial class modulo_de_registrar_gastos_inventario : Form
     {
-        public modulo_de_gastos()
+        public modulo_de_registrar_gastos_inventario()
         {
             InitializeComponent();
-        }
-
-        private void panel_gastos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void lbl_origen_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

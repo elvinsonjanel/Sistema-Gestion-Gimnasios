@@ -161,11 +161,17 @@
     <Compile Include="modulo_de_facturacion.Designer.cs">
       <DependentUpon>modulo_de_facturacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="modulo_de_gastos.cs">
+    <Compile Include="modulo_de_gastos_operativo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="modulo_de_gastos.Designer.cs">
-      <DependentUpon>modulo_de_gastos.cs</DependentUpon>
+    <Compile Include="modulo_de_gastos_operativo.Designer.cs">
+      <DependentUpon>modulo_de_gastos_operativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modulo_de_historial_membresia_ofertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_historial_membresia_ofertas.Designer.cs">
+      <DependentUpon>modulo_de_historial_membresia_ofertas.cs</DependentUpon>
     </Compile>
     <Compile Include="modulo_de_inventario.cs">
       <SubType>Form</SubType>
@@ -191,11 +197,11 @@
     <Compile Include="modulo_de_pagos.Designer.cs">
       <DependentUpon>modulo_de_pagos.cs</DependentUpon>
     </Compile>
-    <Compile Include="modulo_de_membresias.cs">
+    <Compile Include="modulo_de_membresias_ofertas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="modulo_de_membresias.Designer.cs">
-      <DependentUpon>modulo_de_membresias.cs</DependentUpon>
+    <Compile Include="modulo_de_membresias_ofertas.Designer.cs">
+      <DependentUpon>modulo_de_membresias_ofertas.cs</DependentUpon>
     </Compile>
     <Compile Include="modulo_de_clientes.cs">
       <SubType>Form</SubType>
@@ -226,6 +232,18 @@
     </Compile>
     <Compile Include="modulo_de_registrar_clientes.Designer.cs">
       <DependentUpon>modulo_de_registrar_clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modulo_de_registrar_gastos_inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_registrar_gastos_inventario.Designer.cs">
+      <DependentUpon>modulo_de_registrar_gastos_inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modulo_de_registrar_gastos_operativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_registrar_gastos_operativo.Designer.cs">
+      <DependentUpon>modulo_de_registrar_gastos_operativo.cs</DependentUpon>
     </Compile>
     <Compile Include="modulo_de_registrar_inventario.cs">
       <SubType>Form</SubType>
@@ -287,6 +305,12 @@
     <Compile Include="modulo_de_nuevo_gasto.Designer.cs">
       <DependentUpon>modulo_de_nuevo_gasto.cs</DependentUpon>
     </Compile>
+    <Compile Include="modulo_gastos_inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_gastos_inventario.Designer.cs">
+      <DependentUpon>modulo_gastos_inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="consulta_de_asistencia.resx">
@@ -313,20 +337,26 @@
     <EmbeddedResource Include="modulo_de_control_de_acceso.resx">
       <DependentUpon>modulo_de_control_de_acceso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_editar_cliente.resx">
+      <DependentUpon>modulo_de_editar_cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_editar_rol.resx">
       <DependentUpon>modulo_de_editar_rol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_facturacion.resx">
       <DependentUpon>modulo_de_facturacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="modulo_de_gastos.resx">
-      <DependentUpon>modulo_de_gastos.cs</DependentUpon>
+    <EmbeddedResource Include="modulo_de_gastos_operativo.resx">
+      <DependentUpon>modulo_de_gastos_operativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_historial_membresia_ofertas.resx">
+      <DependentUpon>modulo_de_historial_membresia_ofertas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_inventario.resx">
       <DependentUpon>modulo_de_inventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="modulo_de_membresias.resx">
-      <DependentUpon>modulo_de_membresias.cs</DependentUpon>
+    <EmbeddedResource Include="modulo_de_membresias_ofertas.resx">
+      <DependentUpon>modulo_de_membresias_ofertas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_clientes.resx">
       <DependentUpon>modulo_de_clientes.cs</DependentUpon>
@@ -355,6 +385,12 @@
     <EmbeddedResource Include="modulo_de_registrar_clientes.resx">
       <DependentUpon>modulo_de_registrar_clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_registrar_gastos_inventario.resx">
+      <DependentUpon>modulo_de_registrar_gastos_inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_registrar_gastos_operativo.resx">
+      <DependentUpon>modulo_de_registrar_gastos_operativo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_registrar_membresias.resx">
       <DependentUpon>modulo_de_registrar_membresias.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,6 +405,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_reportes.resx">
       <DependentUpon>modulo_de_reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_gastos_inventario.resx">
+      <DependentUpon>modulo_gastos_inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace GoFitnessGym
 {
-    public partial class modulo_de_registrar_clientes : Form
+    public partial class modulo_de_historial_membresia_ofertas : Form
     {
-        public modulo_de_registrar_clientes()
+        public modulo_de_historial_membresia_ofertas()
         {
             InitializeComponent();
         }
 
+        private void dgv_auditoria_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
