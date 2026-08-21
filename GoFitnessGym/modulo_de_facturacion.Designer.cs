@@ -46,7 +46,6 @@ namespace GoFitnessGym
             this.col_descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -247,40 +246,29 @@ namespace GoFitnessGym
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Gray;
-            this.button6.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(236, 773);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(117, 54);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Guardar";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Gray;
             this.button7.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(440, 773);
+            this.button7.Location = new System.Drawing.Point(207, 773);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(117, 54);
             this.button7.TabIndex = 17;
             this.button7.Text = "Cancelar";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button8.Font = new System.Drawing.Font("Lexend", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(905, 773);
+            this.button8.Location = new System.Drawing.Point(875, 773);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(228, 54);
+            this.button8.Size = new System.Drawing.Size(166, 54);
             this.button8.TabIndex = 18;
-            this.button8.Text = "Insprimir Factura";
+            this.button8.Text = "Procesar";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // label6
@@ -506,7 +494,6 @@ namespace GoFitnessGym
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
@@ -546,7 +533,6 @@ namespace GoFitnessGym
         private System.Windows.Forms.DataGridViewTextBoxColumn col_descuento;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_subtotal;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label6;

@@ -167,12 +167,6 @@
     <Compile Include="modulo_de_gastos.Designer.cs">
       <DependentUpon>modulo_de_gastos.cs</DependentUpon>
     </Compile>
-    <Compile Include="modulo_de_historial_notificaciones_automaticas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="modulo_de_historial_notificaciones_automaticas.Designer.cs">
-      <DependentUpon>modulo_de_historial_notificaciones_automaticas.cs</DependentUpon>
-    </Compile>
     <Compile Include="modulo_de_inventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +238,12 @@
     </Compile>
     <Compile Include="modulo_de_registrar_membresias.Designer.cs">
       <DependentUpon>modulo_de_registrar_membresias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modulo_de_registrar_nuevo_pagp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_de_registrar_nuevo_pagp.Designer.cs">
+      <DependentUpon>modulo_de_registrar_nuevo_pagp.cs</DependentUpon>
     </Compile>
     <Compile Include="modulo_de_registrar_productos.cs">
       <SubType>Form</SubType>
@@ -322,9 +322,6 @@
     <EmbeddedResource Include="modulo_de_gastos.resx">
       <DependentUpon>modulo_de_gastos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="modulo_de_historial_notificaciones_automaticas.resx">
-      <DependentUpon>modulo_de_historial_notificaciones_automaticas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_inventario.resx">
       <DependentUpon>modulo_de_inventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -360,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_registrar_membresias.resx">
       <DependentUpon>modulo_de_registrar_membresias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modulo_de_registrar_nuevo_pagp.resx">
+      <DependentUpon>modulo_de_registrar_nuevo_pagp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modulo_de_registrar_productos.resx">
       <DependentUpon>modulo_de_registrar_productos.cs</DependentUpon>
